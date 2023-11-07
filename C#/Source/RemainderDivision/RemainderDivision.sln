@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemainderDivision", "RemainderDivision\RemainderDivision.csproj", "{FCE43A5D-4AC7-404B-B62B-AE7F064B34ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCE43A5D-4AC7-404B-B62B-AE7F064B34ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCE43A5D-4AC7-404B-B62B-AE7F064B34ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCE43A5D-4AC7-404B-B62B-AE7F064B34ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCE43A5D-4AC7-404B-B62B-AE7F064B34ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8BE3B64B-1E7B-4799-A59A-71C59048AE6C}
+	EndGlobalSection
+EndGlobal
