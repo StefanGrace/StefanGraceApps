@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<!--head-->
+<head>
+	<meta name="viewport" content="width=device-width" charset="UTF-8">
+	<title>JavaScript Extension</title>
+	<link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+</head>
+
+<!--body-->
+<body>
+	<!--header section-->
+	<header>
+		<!--title section-->
+		<h1 class="title-area">JavaScript Extension</h1>
+		<!--navbar-->
+		<nav class="menu-area">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="extension.html">Extension</a></li>
+			</ul>
+		</nav>	
+	</header>
+	
+	<!--main section-->
+	<main class="article-background">
+		<div class="article">
+			<h2>Sement of authenticity</h2>
+			<p>
+				I confirm that:
+				<li>This is an original assessment and is entirely my own work.</li>
+				<li>It contains no material previously published or written by another person or myself except where due acknowledgement is made in the text.</li>
+				<li>No material which to a substantial extent, has been submitted for any other academic course, is included without acknowledgement.</li>
+			</p>
+		</div>
+		<!--Advanced JS Feature 1: Date Picker-->
+		<div class="article">
+			<h2>Advanced JS Feature 1: Date Picker</h2>
+			<p>When you click on the field below, a jQuery date picker will come up and when you select a date it will format it as YYYY-MM-DD.</p>
+			<form>
+				<input type="text" id="advanced-js-1">
+			</form>
+		</div>
+		<!--Advanced JS Feature 2: Drag and Drop-->
+		<div class="article">
+			<h2>Advanced JS Feature 2: Drag and Drop</h2>
+			<p id="drop-message">Drag and drop the phone into the box.</p>
+			<div id="drop-target"></div>
+			<img src="img/phone.png" alt="Phone" width="50em" id="phone-draggable">
+		</div>
+		<!--Advanced JS Feature 3: File Upload-->
+		<div class="article">
+			<h2>Advanced JS Feature 3: File Upload</h2>
+			<p>Upload an image of your broken mobile phone</p>
+			<form>
+				<input type="file" id="advanced-js-3" multiple>
+			</form>
+		</div>
+		<!--Advanced JS Feature 4: Geo Location-->
+		<div class="article">
+			<h2>Advanced JS Feature 4: Geo Location</h2>
+			<p>Click the button to get your coordinates</p>
+			<form>
+				<button type="button" id="advanced-js-4">Get current location</button>
+			</form>
+			<p id="geo-location"></p>
+		</div>
+		<!--Advanced JS Feature 5: Animation-->
+		<div class="article">
+			<h2>Advanced JS Feature 5: Animation</h2>
+			<p>Click on the buttons below to animate the green rectangle</p>
+			<div id="advanced-js-5"></div>
+			<button type="button" id="move-left">Move Left</button>
+			<button type="button" id="move-right">Move Right</button>
+			<button type="button" id="shrink">Shrink</button>
+			<button type="button" id="expand">Expand</button>
+		</div>
+		<!--JavaScript-->
+		<script src="js/advanced-js.js"></script>
+		
+	</main>
+	
+	<!--footer section-->
+	<footer>
+		<p>Stefan Grace, Copyright &copy; 2019</p>
+	</footer>
+</body>
+
+</html>
