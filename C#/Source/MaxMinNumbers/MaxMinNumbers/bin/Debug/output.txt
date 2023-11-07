@@ -1,0 +1,14 @@
+Highest signed 8-bit integer: 127
+Highest unsigned 8-bit integer: 255
+Highest signed 16-bit integer: 32767
+Highest unsigned 16-bit integer: 65535
+Highest signed 32-bit integer: 2147483647
+Highest unsigned 32-bit integer: 4294967295
+Highest signed 64-bit integer: 9223372036854775807
+Highest unsigned 64-bit integer: 18446744073709551615
+Highest 32-bit float: 3.402823E+38
+Highest 64-bit float: 1.79769313486232E+308
+Highest decimal: 79228162514264337593543950335
+Lowest positive 32-bit float: 1.401298E-45
+Lowest positive 64-bit float: 4.94065645841247E-324
+Lowest positive decimal: 0.0000000000000000000000000001
