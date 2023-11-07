@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{624168B2-C977-4F25-9D4D-507F80982C97}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Uno</RootNamespace>
+    <AssemblyName>Uno</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DateFormatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DateFormatForm.Designer.cs">
+      <DependentUpon>DateFormatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HighScores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HighScores.Designer.cs">
+      <DependentUpon>HighScores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NameInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NameInputForm.Designer.cs">
+      <DependentUpon>NameInputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DateFormatForm.resx">
+      <DependentUpon>DateFormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HighScores.resx">
+      <DependentUpon>HighScores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NameInputForm.resx">
+      <DependentUpon>NameInputForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bluePlus2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueSkip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greenPlus2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greenSkip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redPlus2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redSkip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wild.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellowPlus2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellowSkip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+    <None Include="Resources\wildYellow.png" />
+    <None Include="Resources\wildRed.png" />
+    <None Include="Resources\wildGreen.png" />
+    <None Include="Resources\wildBlue.png" />
+    <None Include="Resources\plus4Yellow.png" />
+    <None Include="Resources\plus4Red.png" />
+    <None Include="Resources\plus4Green.png" />
+    <None Include="Resources\plus4Blue.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
