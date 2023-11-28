@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateFormatterGUI", "DateFormatterGUI\DateFormatterGUI.csproj", "{AB1016A0-8AFD-4D60-882C-FAEDB80120DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB1016A0-8AFD-4D60-882C-FAEDB80120DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB1016A0-8AFD-4D60-882C-FAEDB80120DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB1016A0-8AFD-4D60-882C-FAEDB80120DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB1016A0-8AFD-4D60-882C-FAEDB80120DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1AB6E049-00D5-40D3-9F50-98ABE5DC8B80}
+	EndGlobalSection
+EndGlobal
