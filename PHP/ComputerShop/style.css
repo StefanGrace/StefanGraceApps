@@ -1,0 +1,92 @@
+/* style.css
+	Stefan Grace - ITWD7.358 Project 2
+	2021
+*/
+
+
+
+/* All */
+
+body {
+	font-family: sans-serif;
+	background-color: #808080;
+}
+
+
+/* Header and footer */
+
+#title, 
+#footer {
+	background-color: #008000;
+	color: #FFFFFF;
+}
+
+#footer {
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+#links {
+	background-color: #00FF00;
+	text-align: center;
+}
+
+#links td {
+	width: 25%;
+}
+
+#links td div {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#links td:hover {
+	background-color: #00E000;
+}
+
+#links td a {
+	color: #000000;
+	text-decoration: none;
+}
+
+#links td a:hover {
+	color: #FFFFFF;
+}
+
+
+/* Body */
+
+.body {
+	background-color: #E8E8E8;
+}
+
+.content {
+	padding-left: 32px;
+	padding-right: 32px;
+}
+
+.table-headings, 
+.totals, 
+.current-page {
+	font-weight: bold;
+}
+
+
+/* Product table */
+
+.product-table td {
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.even-row {
+	background-color: #F4F4F4;
+}
+
+.left-column {
+	padding-left: 32px;
+}
+
+.right-column {
+	padding-right: 32px;
+}

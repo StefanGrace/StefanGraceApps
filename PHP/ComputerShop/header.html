@@ -1,0 +1,32 @@
+<?php # header.html
+// This page begins the session, the HTML page, and the layout table.
+
+session_start(); ?>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><?php echo (isset($page_title)) ? $page_title : "Welcome!"; ?></title>
+		<link type="text/css" rel="stylesheet" href="style.css" media="screen" />
+	</head>
+	<body>
+		<table cellspacing="0" cellpadding="0" border="0" align="center" width="900">
+			<tr class="header" id="title">
+				<td align="center" colspan="4"><h1>Stefan's Computer Shop</h1></td>
+			</tr>
+			<?php // The link of the current page will be bold. This is determined by the page title. ?>
+			<tr class="header" id="links">
+				<td <?php if ($page_title == "Stefan's Computer Shop - Home") {echo 'class="current-page"';}?>>
+					<a href="index.php"><div>Home</div></a>
+				</td>
+				<td <?php if ($page_title == "Browse Products") {echo 'class="current-page"';}?>>
+					<a href="browse_products.php"><div>View Products</div></a>
+				</td>
+				<td <?php if ($page_title == "View Your Shopping Cart") {echo 'class="current-page"';}?>>
+					<a href="view_cart.php"><div>Cart</div></a>
+				</td>
+				<td <?php if ($page_title == "Forum") {echo 'class="current-page"';}?>>
+					<a href="forum.php"><div>Forum</div></a>
+				</td>
+			</tr>
+			<tr class="body">
+				<td align="left" colspan="4"> <br />
