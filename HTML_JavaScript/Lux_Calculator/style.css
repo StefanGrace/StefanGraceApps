@@ -1,0 +1,36 @@
+body {
+    font-family: arial;
+    text-align: center;
+}
+
+input {
+}
+
+.label {
+    text-align: right;
+}
+
+.user-input {
+    text-align: left;
+}
+
+#aperture {
+    width: 151px;
+}
+
+#shutter-unit {
+    width: 80px;
+}
+
+#shutter-speed {
+    width: 80px;
+}
+
+#iso {
+    width: 165px;
+}
+
+#lux {
+    padding-top: 20px;
+    font-size: 20px;
+}

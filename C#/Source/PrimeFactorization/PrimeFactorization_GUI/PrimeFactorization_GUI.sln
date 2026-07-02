@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeFactorization_GUI", "PrimeFactorization_GUI\PrimeFactorization_GUI.csproj", "{9C01FD76-11C0-4957-A5CE-BE9E8A92713C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C01FD76-11C0-4957-A5CE-BE9E8A92713C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C01FD76-11C0-4957-A5CE-BE9E8A92713C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C01FD76-11C0-4957-A5CE-BE9E8A92713C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C01FD76-11C0-4957-A5CE-BE9E8A92713C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE95B082-CAC0-4F58-8276-811558DA5BFD}
+	EndGlobalSection
+EndGlobal

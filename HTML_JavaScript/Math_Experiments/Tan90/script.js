@@ -1,0 +1,1 @@
+console.log(Math.tan(90 * (Math.PI / 180)));

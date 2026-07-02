@@ -1,0 +1,41 @@
+ISO 8601 with space:
+2023-12-05 20:15:38
+
+ISO 8601 with T:
+2023-12-05T20:15:38
+
+Suitable for filenames:
+2023-12-05_20-15-38
+
+European short:
+5.12.23 20:15
+
+European numerical: 
+05.12.2023 20:15:38
+
+British medium:
+05 Dec 2023 20:15
+
+British full:
+Tuesday, 5 December 2023, 20:15:38
+
+American short:
+12/5/23 8:15 PM
+
+American numerical: 
+12/05/2023 8:15:38 PM
+
+American medium:
+Dec 5, 2023 8:15 PM
+
+American full:
+Tuesday, December 5, 2023, 8:15:38 PM
+
+Chinese:
+2023年12月5日周二下午8时15分38
+
+Hungarian:
+2023. december 5., kedd 20:15:38
+
+Vietnamese:
+thứ ba, 5 tháng 12 năm 2023 20:15:38

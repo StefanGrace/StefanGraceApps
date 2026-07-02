@@ -1,0 +1,6 @@
+Squares: 36 X 20
+
+Pixels: 1332 X 769
+
+Level Thumbnail: 5 squres wide x 4 squres tall
+

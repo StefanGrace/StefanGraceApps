@@ -1,0 +1,14 @@
+Arrow Keys / WADS - move character
+Crtl - specal
+Shift - change ?
+Alt - switch teleport sides
+QEZC - move V
+Enter / Backspace - select characters
+IJKL - move message
+X - close message
+R - life drain
+G - life give
+Esc - Menu
+V - View Alumax
+H - Help
+M - Draw Mode

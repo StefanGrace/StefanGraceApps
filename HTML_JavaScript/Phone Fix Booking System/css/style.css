@@ -1,0 +1,285 @@
+/*MOBILE FIRST APPROACH: all the styles below are set for mobile devices*/
+/*RESPONSIVE WEBSITE*/
+/*STEFAN GRACE*/
+
+   
+/*global styles*/
+* {
+	box-sizing: border-box;
+	font-family: 'Open Sans' , sans-serif;
+	margin: 0;
+	padding: 0;	
+}
+
+/*use css variables*/
+:root {
+	--main-color: #006064;
+	--header-color: #006064;
+	--nav-color: #4DD0E1;
+	--customer-detail-color: #E0F7FA;
+	--repair-detail-color: #B2EBF2;
+	--courtesy-phone-color: #80DEEA;
+	--cost-section-color: #4DD0E1;
+	--button-section-color: #00ACC1;
+	--footer-color: #0097A7;
+	--article-color: #F8EBD6;
+}
+
+body {
+	font-size: 1em;
+}
+
+/*--------------------*/
+/*styles for header*/
+header {
+	background-color: var(--header-color);
+	min-height: 20vh;
+	display: block;
+	color: #F0F0F0;
+	font-weight: bold;
+	text-align: center;
+}
+
+header .title-area {
+	padding: 1.5em 0.5em;
+}
+
+header nav ul li {
+	display: block;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	background-color: var(--nav-color);
+	padding: 0.5em;
+}
+
+header nav ul a {
+	text-decoration: none;
+	color: black;
+	font-weight: normal;
+}
+
+/*--------------------*/
+/*styles for main*/
+main {
+	background-color: var(--main-color);
+	
+}
+
+.error-message {
+			color: red;
+}
+
+section {
+	padding: 2%;
+}
+
+.form-layout  section{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.form-layout input[type="text"], .form-layout input[type="email"], .form-layout select, .form-layout textarea {
+	width: 100%;
+	
+}
+
+.form-layout textarea  {
+	max-width: 100%;
+	min-width: 100%;
+}
+
+/*costomer details*/
+.customer-details {
+	background-color: var(--customer-detail-color);
+	min-height: 30vh;
+}
+
+/*repair details*/
+.repair-details {
+	background-color: var(--repair-detail-color);
+	min-height: 30vh;
+}
+
+/*courtesy phone*/
+.courtesy-phone {
+	background-color: var(--courtesy-phone-color);
+	min-height: 15vh;
+}
+
+#courtesy-phone-table {
+	border-collapse: collapse;
+	width: 100%;
+	background-color: white;
+	table-layout: fixed;
+	text-align: center;
+}
+
+#courtesy-phone-table tr td th{
+	border: 2px solid black;	
+}
+
+#courtesy-phone-table th{
+	background-color: #A0A0A0;
+	
+}
+
+/*cost section*/
+.cost-section {
+	min-height: 20vh;
+	background-color: var(--cost-section-color);
+}
+
+/*button section*/
+.buttons-section {
+	min-height: 5vh;
+	background-color: var(--button-section-color);
+	text-align: center;
+}
+
+.buttons-section button, .courtesy-phone button {
+	color: white;
+	background-color: #FF8000;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	margin: 0.5em;
+	width: 100%;
+	border: none;
+}
+
+/*other pages*/
+.article-background {
+	background-color: var(--customer-detail-color);
+	padding: 1em;
+}
+
+.article {
+	background-color: var(--article-color);
+	margin: 2em;
+	padding: 1em;
+	float: center;
+}
+
+#drop-target {
+    border-style: solid;
+    border-width: 1px;
+	background-color: white;
+	width: 150px;
+	height: 100px;
+  }
+  
+#advanced-js-5 {
+	background-color: green;
+	width: 150px;
+	height: 100px;
+	position: relative;
+  }
+
+/*--------------------*/
+/*styles for footer*/
+footer {
+	background-color: var(--footer-color);
+	min-height: 3em;
+	color: #F0F0F0;
+	font-weight: bold;
+	/*center the paragraph*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/*------------------------------------------------------------------*/
+/*STYLES FOR TABLET / iPAD */
+@media screen and (min-width: 600px) {
+	/*make the navbar horizontal*/
+	header nav ul {
+		/*USE CSS GRID*/
+		display: grid;
+		grid-template-columns: 1fr 1fr; /*create 2 equal columns*/
+		grid-gap: 0.3em;
+	}
+	
+	header nav ul li {
+		display: block;
+	}
+	
+	.form-layout  section{
+		padding-left: 15%;
+		padding-right: 15%;
+	}
+	
+}
+
+
+/*------------------------------------------------------------------*/
+/*STYLES FOR LAPTOP / DESKTOP */
+@media screen and (min-width: 1025px) {
+	/*move the navbar to the top right corner*/
+	/*USE CSS GRID*/
+	header {
+		display: grid;
+		grid-template-areas: 'title-area title-area menu-area'; /*create a grid of 1 row, 3 columns*/
+		grid-template-columns: 1fr 1fr 1fr; /*make 3 columns equal*/
+	}
+	
+	.title-area {
+		grid-area: title-area;
+	}
+	
+	.menu-area {
+		grid-area: menu-area;
+	}
+	
+	/*set layout for main area*/
+	.form-layout {
+		display: grid;
+		grid-gap: 0;
+		/*create a grid of 3 rows and 3 columns*/
+		grid-template-areas: 
+			'cusomer-details-area repair-details-area courtesy-phone-area' /*first row*/
+			'cusomer-details-area repair-details-area cost-section-area' /*second row*/
+			'buttons-section-area buttons-section-area buttons-section-area'; /*third row*/
+		grid-template-columns: 1fr 1fr 1fr; /*make 3 columns equal*/
+	}
+	
+	.customer-details {
+		grid-area: cusomer-details-area;
+	}
+
+	.repair-details {
+		grid-area: repair-details-area;
+	}
+
+	.courtesy-phone {
+		grid-area: courtesy-phone-area;
+	}
+
+	.cost-section {
+		grid-area: cost-section-area;
+	}
+
+	.buttons-section {
+		grid-area: buttons-section-area;
+	}
+	
+	.buttons-section button, .courtesy-phone button{
+		width: 6em;
+	}
+	
+	.form-layout  section {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	
+	.form-layout input[type="text"], .form-layout input[type="email"], .form-layout select, .form-layout textarea{
+		width: 50%;
+		float: right;
+	}
+	
+	.form-layout textarea {
+		max-width: 50%;
+		min-width: 50%;
+	}
+}

@@ -1,0 +1,202 @@
+﻿COMMENT	© 1997, 1999-2002, 2004-2005, 2007-2008 by Karen Kenworthy, © 2018, 2019 by Joe Winett DBA KarenWare.com - All Rights Reserved
+COMMENT	Include Sub-Folders? Yes
+FOLDER	E:\STEFAN\My Documents\Documents\ChatGPT\Chats\0÷0=1, ??? ???? ?\	0	2	300,739
+FOLDER	E:\STEFAN\My Documents\Documents\ChatGPT\Chats\0°C - Winter's Liberation\	0	1	263,468
+FOLDER	E:\STEFAN\My Documents\Documents\ChatGPT\Chats\Android ? Linux Distro\	0	1	178,356
+FOLDER	E:\STEFAN\My Documents\Documents\ChatGPT\Chats\Chinese ? Japanese\	0	1	291,509
+FOLDER	E:\STEFAN\My Documents\Documents\ChatGPT\Chats\Música na Casa\	0	1	265,596
+FOLDER	E:\STEFAN\My Documents\Documents\ChatGPT\Chats\???-?? ???, ?? ?????\	0	1	108,407
+FOLDER	E:\STEFAN\My Documents\Documents\ChatGPT\Chats\??????????!\	0	1	200,272
+FOLDER	E:\STEFAN\My Documents\Documents\ChatGPT\Chats\????? ????????\	0	1	178,406
+FOLDER	E:\STEFAN\My Documents\Documents\ChatGPT\Chats\?? ?? ?? ??\	0	1	125,143
+FOLDER	E:\STEFAN\My Documents\Documents\ChatGPT\Chats\????? ???????\	0	1	208,449
+FOLDER	E:\STEFAN\My Documents\Documents\ChatGPT\Chats\?? ?? 2023\	0	1	167,205
+FOLDER	E:\STEFAN\My Documents\Documents\ChatGPT\Chats\???????\	0	1	210,147
+FOLDER	E:\STEFAN\My Documents\Documents\ChatGPT\Chats\??????????\	0	2	429,759
+FOLDER	E:\STEFAN\My Documents\Documents\ChatGPT\Chats\????????\	0	1	130,886
+FOLDER	E:\STEFAN\My Documents\Documents\ChatGPT\Chats\? - Chinese\	0	1	279,777
+FOLDER	E:\STEFAN\My Documents\Documents\ChatGPT\Chats\????\	0	1	171,392
+FOLDER	E:\STEFAN\My Documents\Documents\ChatGPT\Chats\???? - 1-4?\	0	1	132,809
+FOLDER	E:\STEFAN\My Documents\Documents\ChatGPT\Chats\????\	0	1	132,308
+FILE	8 Crazy Experiments at -55°C_ -67°F (The coldest city in the World Yakutsk) - English (auto).srt	2023-02-03 03:02	15,706
+FILE	180° Shutter Angle - Why I don't use it for 50_60p - YouTube - English (auto).srt	2023-09-12 01:26	11,664
+FILE	Motion Blur_ Shutter Speed_ & 180° Shutter Angle __ TESTING the RULES! - English.srt	2024-09-30 02:56	24,184
+FILE	Storing dead people at -196°C - English.srt	2023-08-01 04:13	9,276
+FILE	Surprising_ Is Windows 10 Making a Market Share COMEBACK_ (Statcounte  August 2025) - English (auto).srt	2025-09-03 03:41	7,391
+FILE	The Real Meaning of E=mc² - Bulgarian.srt	2022-12-16 20:13	32,790
+FILE	The Real Meaning of E=mc² - Chinese (Taiwan).srt	2022-12-16 20:14	16,913
+FILE	The Real Meaning of E=mc² - English.srt	2022-12-16 20:13	23,239
+FILE	The Real Meaning of E=mc² - French.srt	2022-12-16 20:14	24,831
+FILE	The Real Meaning of E=mc² - Greek.srt	2022-12-16 20:14	34,798
+FILE	The Real Meaning of E=mc² - Hungarian.srt	2022-12-16 20:14	21,254
+FILE	The Real Meaning of E=mc² - Italian.srt	2022-12-16 20:14	23,892
+FILE	The Real Meaning of E=mc² - Korean.srt	2022-12-16 20:14	30,047
+FILE	The Real Meaning of E=mc² - Polish.srt	2022-12-16 20:14	23,472
+FILE	The Real Meaning of E=mc² - Portuguese.srt	2022-12-16 20:14	23,434
+FILE	The Real Meaning of E=mc² - Romanian.srt	2022-12-16 20:14	24,259
+FILE	The Real Meaning of E=mc² - Spanish.srt	2022-12-16 20:14	24,320
+FILE	The Real Meaning of E=mc² - Turkish.srt	2022-12-16 20:14	12,917
+FILE	There's a £100_000 coin buried under this London building - English.srt	2025-02-24 22:59	6,247
+FILE	Visiting the World's Hottest Place (159°F_ 70°C) LUT DESERT - English (auto).srt	2023-02-03 03:25	44,982
+FILE	Why does E=MC² - English (auto).srt	2023-08-13 05:19	15,059
+FILE	Why E=mc² is wrong - English.srt	2022-12-20 04:03	8,051
+FILE	Multimeter Usage, Ohm’s Law & Resistor Networks.docx	2020-03-05 20:51	32,549
+FILE	IoTT Module 8 – Sensors.pdf	2020-05-10 00:52	1,222,003
+FILE	IoTT Module 9 – Communications - Messaging.pdf	2020-04-28 22:14	434,301
+FILE	Boulangère Potatoes.docx	2014-06-03 19:00	31,779
+FILE	Nestlé Choose Wellness.url	2014-11-07 07:59	263
+FILE	Maddona - papa don´t preach.mp3	2010-08-14 17:23	3,987,623
+FILE	£.jpg	2013-08-05 19:23	646,051
+FILE	The funnest game we’ve ever played.pptx	2010-06-02 21:15	244,900
+FILE	02-12 Shot Text ‘In the Rubbish Tin’.docx	2014-08-18 08:42	1,978,161
+FILE	Creative writing – Christmas.docx	2013-04-06 09:14	18,157
+FILE	£.jpg	2013-08-06 08:53	646,051
+FILE	£159.jpg	2013-08-10 19:13	357,571
+FILE	1. Mum cutting the world in ½ with a pair a red handled scissors.3gp	2014-11-20 19:27	20,959,894
+FILE	1. Mum cutting the world in ½ with a pair a red handled scissors.3gp	2014-11-20 19:27	20,959,894
+FILE	1970’s Julie’s photos.pptx	2015-04-05 19:28	315,597
+FILE	Lynda’s  Old House.pptx	2014-10-06 16:54	402,148
+FILE	Oven   Mitre 10™.url	2018-05-10 19:27	826
+FILE	Maddona - papa don´t preach.mp3	2010-08-14 17:23	3,987,623
+FILE	£.jpg	2013-08-05 19:23	646,051
+FILE	The funnest game we’ve ever played.pptx	2010-06-02 21:15	244,900
+FILE	02-12 Shot Text ‘In the Rubbish Tin’.docx	2014-08-18 08:42	1,978,161
+FILE	Creative writing – Christmas.docx	2013-04-06 09:14	18,157
+FILE	£.jpg	2013-08-06 08:53	646,051
+FILE	£159.jpg	2013-08-10 19:13	357,571
+FILE	1. Mum cutting the world in ½ with a pair a red handled scissors.3gp	2014-11-20 19:27	20,959,894
+FILE	1. Mum cutting the world in ½ with a pair a red handled scissors.3gp	2014-11-20 19:27	20,959,894
+FILE	1970’s Julie’s photos.pptx	2015-04-05 19:28	315,597
+FILE	Lynda’s  Old House.pptx	2015-11-17 18:29	402,557
+FILE	1970’s Julie’s photos.pptx	2015-04-05 19:28	315,597
+FILE	Debbie’s House.pptx	2019-04-23 13:30	869,092
+FILE	Here’s the PARTY!.pub	2014-07-11 22:17	173,056
+FILE	Chocolate ½ eaten.jpg	2014-05-31 18:52	1,297,359
+FILE	End screen ele­ment type 2015-05-16_2020-04-20 OSFirstTimer NZ.zip	2020-04-20 22:57	31,931
+FILE	Geo­graphy 2015-05-16_2020-04-20 OSFirstTimer NZ.zip	2020-04-20 22:24	257,785
+FILE	Op­er­at­ing sys­tem 2015-05-16_2020-04-20 OSFirstTimer NZ.zip	2020-04-20 22:53	133,813
+FILE	Play­back loc­a­tion 2015-05-16_2020-04-20 OSFirstTimer NZ.zip	2020-04-20 22:50	33,900
+FILE	Playl­ist 2015-05-16_2020-04-20 OSFirstTimer NZ.zip	2020-04-20 22:45	34,000
+FILE	Shar­ing ser­vice 2015-05-16_2020-04-20 OSFirstTimer NZ.zip	2020-04-20 23:01	52,158
+FILE	Sub­scrip­tion source 2015-05-16_2020-04-20 OSFirstTimer NZ.zip	2020-04-20 22:42	51,840
+FILE	Sub­scrip­tion status 2015-05-16_2020-04-20 OSFirstTimer NZ.zip	2020-04-20 22:40	20,691
+FILE	Sub­titles and CC 2015-05-16_2020-04-20 OSFirstTimer NZ.zip	2020-04-20 22:54	33,247
+FILE	View­er age 2015-05-16_2020-04-20 OSFirstTimer NZ.zip	2020-04-20 22:26	370
+FILE	View­er gender 2015-05-16_2020-04-20 OSFirstTimer NZ.zip	2020-04-20 22:29	296
+FILE	Ömer Efe Haçaman 1.png	2017-10-05 18:02	11,625
+FILE	Ömer Efe Haçaman 1.txt	2017-10-05 18:04	66
+FILE	Ömer Efe 1.png	2017-10-30 01:23	12,292
+FILE	Ömer Efe 1.txt	2017-10-30 01:26	91
+FILE	Microsoft_Office_logo_(2013–2019).svg	2021-08-04 18:25	627
+FILE	Microsoft_Office_logo_(2019–present).svg	2021-08-04 18:24	8,090
+FILE	Chocolate - Not So Sweet Afterall (The Côte d'Ivoire Story).mp4	2010-07-08 15:06	41,030,291
+FILE	'Their time and Our times’ Nicola and Taylor.pptx	2012-08-03 11:02	669,233
+FILE	Investigation – Vegetarain Food Products.doc	2006-07-25 12:43	19,456
+FILE	1. Dad’s broken glasses.JPG	2012-09-14 22:45	385,029
+FILE	Jezero_sol_0092_SuperCam_232°_11-09_LMST.png	2022-11-28 01:14	3,346,660
+FILE	£159.jpg	2013-08-10 00:27	357,571
+FILE	£.jpg	2013-08-05 19:23	646,051
+FILE	Chocolate ½ eaten.jpg	2014-05-31 18:52	1,297,359
+FILE	½ eaten Collin cake.JPG	2015-01-23 18:23	684,375
+FILE	½ Rotten peach.JPG	2015-01-23 18:23	290,706
+FILE	Piece of Polystyrene Cracked in ½.jpg	2014-10-08 00:30	1,144,906
+FILE	MacDonald’s 1.jpg	2013-03-27 21:30	201,722
+FILE	MacDonald’s 2.jpg	2013-03-27 21:30	104,614
+FILE	Storing dead people at -196°C.mp4	2023-08-26 20:46	155,618,051
+FILE	Almost scammed for £32,000.mp4	2019-01-16 02:05	80,101,105
+FILE	1. Mum cutting the world in ½ with a pair a red handled scissors.3gp	2013-12-07 17:19	20,959,894
+FILE	What’s the difference between plants and animals.docx	2012-08-21 21:00	15,748
+FILE	Case study – the lower north island floods February 2004.docx	2012-08-29 14:22	18,085
+FILE	Tangiwai – weeping waters of death.docx	2012-09-11 12:00	16,612
+FILE	Creative writing – DRAFT.docx	2013-04-03 13:20	18,157
+FILE	The structure of ‘the outsider'.docx	2013-03-13 21:41	16,988
+FILE	Opening scenes 'The Blind Side’.docx	2013-06-04 12:30	17,274
+FILE	05-31 Body image & the media – summary assessment.docx	2013-05-31 10:50	17,789
+FILE	06-11 Stress – our class review.docx	2013-06-21 20:17	18,329
+FILE	03-25 A waiter’s nightmare.docx	2013-03-25 13:27	20,420
+FILE	The living world – genetics.docx	2013-09-01 00:33	37,026
+FILE	The living world – genetics.PNG	2013-08-26 14:40	15,524
+FILE	The final solution – holocaust.docx	2013-09-25 10:25	17,007
+FILE	02-12 Shot Text; ‘In the Rubbish Tin’.docx	2014-02-19 12:05	1,978,161
+FILE	08-07 + x - ÷ like terms + BEDMAS.docx	2014-08-07 14:16	13,792
+FILE	I ? you from Gran.docx	2014-11-18 18:48	660,979
+FILE	02-09 What’s so special about Rutherford.docx	2014-02-09 21:25	16,022
+FILE	02-18 Making ionic compounds – magnesium and oxygen.docx	2014-02-18 10:06	23,077
+FILE	03-25 Science Ideas – increasing temperature.docx	2014-03-28 12:26	13,216
+FILE	06-13 Genetics – a new language.docx	2014-06-13 13:16	12,646
+FILE	The living world – genetics.PNG	2013-08-26 14:40	15,524
+FILE	06-18 Calabasas Teen Forum – Social Media.docx	2014-06-18 11:43	13,235
+FILE	09-11 Children’s Commissioner.docx	2014-09-11 10:46	11,663
+FILE	Waikiki Beach Honolulu Hawaï.jpg	2015-12-01 15:56	85,703
+FILE	._A day in the life of a mum ‘Less interaction with families’.docx	2012-03-01 10:16	4,096
+FILE	3?21?.pdf	2022-03-29 19:35	3,309,479
+FILE	10 commandments?.bmp	2014-05-26 18:50	758,594
+FILE	? 13 ? ? ? ?  ? ? ? ? ?.docx	2013-11-06 18:31	13,021
+FILE	¾ circle .PNG	2014-06-10 13:58	1,855
+FILE	Creative writing – DRAFT.docx	2013-03-31 15:01	17,738
+FILE	C? Chi tunnels - Wikipedia, the free encyclopedia.website	2014-05-08 15:56	747
+FILE	Decimal ? fraction.docx	2013-02-07 14:43	13,854
+FILE	Doc½.docx	2013-03-13 19:03	13,005
+FILE	FXG™ (2).nfo	2010-05-09 10:35	4,858
+FILE	FXG™.nfo	2012-01-11 23:38	4,858
+FILE	Percentage ? fraction.docx	2013-02-07 14:43	12,982
+FILE	Screenshot 2021-12-04 at 23-05-10 Westpac One® - Online Banking.png	2021-12-04 23:05	23,733
+FILE	Screenshot 2022-03-19 at 00-12-53 Westpac One® - Online Banking.png	2022-03-19 00:12	19,525
+FILE	Screenshot 2022-05-19 at 02-03-50 Westpac One® - Online Banking.png	2022-05-19 03:04	26,152
+FILE	Screenshot 2023-02-21 at 14-47-56 Westpac One® - Online Banking.png	2023-02-21 14:47	31,530
+FILE	Screenshot 2023-02-21 at 14-48-02 Westpac One® - Online Banking.png	2023-02-21 14:48	53,285
+FILE	Screenshot 2023-10-29 at 21-23-45 Westpac One® - Online Banking.png	2023-10-29 21:23	54,685
+FILE	Screenshot 2025-02-03 at 21-11-39 Westpac One® - Online Banking.png	2025-02-03 21:11	52,938
+FILE	Screenshot_2020-12-06 Is Raid™ bug spray dangerous to humans - Quora(2).png	2020-12-06 23:29	14,741
+FILE	Screenshot_2020-12-06 Is Raid™ bug spray dangerous to humans - Quora(3).png	2020-12-06 23:30	8,690
+FILE	Shortcut to 3½ Floppy (A) (2).lnk	2012-05-24 09:49	129
+FILE	Shortcut to 3½ Floppy (A) (3).lnk	2012-05-24 21:36	129
+FILE	Shortcut to 3½ Floppy (A) (4).lnk	2012-05-24 21:36	129
+FILE	Shortcut to 3½ Floppy (A) (5).lnk	2012-06-06 21:09	129
+FILE	Shortcut to 3½ Floppy (A) (6).lnk	2012-06-06 21:09	129
+FILE	Shortcut to 3½ Floppy (A) (7).lnk	2012-06-06 21:09	129
+FILE	Shortcut to 3½ Floppy (A).lnk	2012-04-04 19:25	129
+FILE	The structure of ‘the outsider'.lnk	2013-03-26 12:01	1,100
+FILE	Way of Londoner’s.mp3	2012-12-23 14:53	9,322
+FILE	Which type of milk is best for you - Jonathan J. O’Sullivan & Grace E. Cunningham - French.srt	2022-07-07 02:17	0
+FILE	Why we’re learning Python .xps	2018-01-14 19:56	3,052,956
+FILE	????.pdf	2022-01-09 22:30	2,236,925
+FILE	Intel® HD Graphics.lnk	2011-12-02 12:27	932
+FILE	Horse?.jpg	2013-07-31 18:32	31,023
+FILE	FXG™.lnk	2012-07-16 20:11	4,140
+FILE	Screenshot Ultimate - No capture method help?.docx	2013-01-31 18:16	14,987
+FOLDER	E:\STEFAN\programes\Data&Archive\Google Archive\2019-01-21\Google Play Games Services\Games\Roll the Ball® - slide puzzle\	0	2	1,357
+FOLDER	E:\STEFAN\programes\Data&Archive\Google Archive\2019-01-21\Google Play Games Services\Games\UNO!™\	0	1	654
+FOLDER	E:\STEFAN\programes\Data&Archive\Google Archive\2019-12-19\Google Play Games Services\Games\Roll the Ball® - slide puzzle\	0	2	1,357
+FOLDER	E:\STEFAN\programes\Data&Archive\Google Archive\2019-12-19\Google Play Games Services\Games\UNO!™\	0	1	654
+FOLDER	E:\STEFAN\programes\Data&Archive\Google Archive\2020-05-18\Google Play Games Services\Games\Roll the Ball® - slide puzzle\	0	2	1,357
+FOLDER	E:\STEFAN\programes\Data&Archive\Google Archive\2020-05-18\Google Play Games Services\Games\UNO!™\	0	1	654
+FOLDER	E:\STEFAN\programes\Data&Archive\Google Archive\2020-09-04\Google Play Games Services\Games\Roll the Ball® - slide puzzle\	0	2	1,357
+FOLDER	E:\STEFAN\programes\Data&Archive\Google Archive\2020-09-04\Google Play Games Services\Games\UNO!™\	0	1	654
+FOLDER	E:\STEFAN\programes\Data&Archive\Google Archive\2020-12-31\Google Play Games Services\Games\Roll the Ball® - slide puzzle\	0	2	1,357
+FOLDER	E:\STEFAN\programes\Data&Archive\Google Archive\2020-12-31\Google Play Games Services\Games\UNO!™\	0	1	654
+FOLDER	E:\STEFAN\programes\Data&Archive\Google Archive\2021-03-31\Google Play Games Services\Games\Roll the Ball® - slide puzzle\	0	2	1,357
+FOLDER	E:\STEFAN\programes\Data&Archive\Google Archive\2021-03-31\Google Play Games Services\Games\UNO!™\	0	1	654
+FOLDER	E:\STEFAN\programes\Data&Archive\Google Archive\2021-12-28\Google Play Games Services\Games\Roll the Ball® - slide puzzle\	0	2	1,357
+FOLDER	E:\STEFAN\programes\Data&Archive\Google Archive\2021-12-28\Google Play Games Services\Games\UNO!™\	0	1	654
+FOLDER	E:\STEFAN\programes\Data&Archive\Google Archive\2023-04-07\Google Play Games Services\Games\Roll the Ball® - slide puzzle\	0	3	1,674
+FOLDER	E:\STEFAN\programes\Data&Archive\Google Archive\2023-04-07\Google Play Games Services\Games\UNO!™\	0	2	971
+FOLDER	E:\STEFAN\programes\Data&Archive\Google Archive\2025-06-20\Google Play Games Services\Games\Roll the Ball® - slide puzzle\	0	3	1,674
+FOLDER	E:\STEFAN\programes\Data&Archive\Google Archive\2025-06-20\Google Play Games Services\Games\UNO!™\	0	2	971
+FILE	Bliss - The Story of Windows XP’s Famous Defau.html	1980-01-01 01:00	33,485
+FILE	Bliss - The Story of Windows XP’s Famous Defau.json	1980-01-01 01:00	403
+FOLDER	E:\STEFAN\programes\Data&Archive\Google Archive\2025-06-20\NotebookLM\Puente Atlántico Crossing\	1	1	203
+FILE	Puente Atlántico Crossing metadata.json	1980-01-01 01:00	203
+FOLDER	E:\STEFAN\programes\Data&Archive\Google Archive\2025-06-20\NotebookLM\Puente Atlántico Crossing\Sources\	0	2	5,903
+FILE	Day 6 – Puente Atlántico – Site Title metadata.json	1980-01-01 01:00	276
+FILE	Day 6 – Puente Atlántico – Site Title.html	1980-01-01 01:00	5,627
+FILE	Español.txt	2000-11-17 03:03	36,589
+FILE	Français.txt	2000-11-17 03:19	35,793
+FILE	Português.txt	2000-11-17 04:24	31,856
+FILE	Guía de referencia rápida.pdf	2001-04-09 23:14	105,576
+FILE	Guía del usuario.pdf	2001-04-18 02:39	9,529,884
+FILE	Léame.wri	2001-05-17 07:01	26,457
+FILE	Léame.pdf	1999-12-17 05:32	30,080
+FOLDER	E:\STEFAN\programes\Things we will never use\Nikon View 5\Reference Manual\Español\	0	1	8,889,224
+FOLDER	E:\STEFAN\programes\Things we will never use\Nikon View 5\Reference Manual\Français\	0	1	9,198,880
+FILE	Ðåöåíçèÿ Crash Bandicoot - Trilogy 3D.docx	2011-03-08 01:22	680,066

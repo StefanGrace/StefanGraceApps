@@ -1,0 +1,9 @@
+None: 101
+Left: 100
+Down: 98
+Right: 102
+Up: 104
+Up Left: 103
+Down Left: 97
+Down Right: 99
+Up Right: 105

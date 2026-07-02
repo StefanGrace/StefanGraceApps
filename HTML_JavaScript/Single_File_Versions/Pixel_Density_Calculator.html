@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Pixel Denisty Calculator</title>
+        <meta name="author" content="Stefan Grace">
+		<style>
+			body {
+				font-family: arial;
+				text-align: center;
+			}
+			#ppi {
+				padding-top: 20px;
+				font-size: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Pixel Denisty Calculator</h1>
+		<table align="center">
+			<tr>
+				<td>Screen size in Inches</td>
+				<td><input type="number" id="screen-size"></input></td>
+			</tr>
+			<tr>
+				<td>Horizontal resolution </td>
+				<td><input type="number" id="width"></input></td>
+			</tr>
+			<tr>
+				<td>Vertical resolution </td>
+				<td><input type="number" id="height"></input></td>
+			</tr>
+		</table>
+		<div id="ppi"></div>
+		<script>
+            function update() {
+                var ppi;
+                var screenSize = document.getElementById("screen-size").value;
+                var width = document.getElementById("width").value;
+                var height = document.getElementById("height").value;
+                if (parseFloat(screenSize) === 0 || parseFloat(width) === 0 || parseFloat(height) === 0) {
+                    ppi = "";
+                } else {
+                    ppi = String(Math.round(Math.sqrt(Math.pow(width, 2) + Math.pow(height, 2)) / screenSize)) + " PPI";
+                }
+                document.getElementById("ppi").innerHTML = ppi;
+            };
+
+            update();
+
+            setInterval(function(){update()}, 500);
+        </script>
+	</body>
+</html>

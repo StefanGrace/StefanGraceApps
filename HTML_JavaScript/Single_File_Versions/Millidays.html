@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--Stefan Grace-->
+<!--2025-12-28-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Millidays</title>
+		<style>
+			body {
+				background-color: #C8C8C8;
+			}
+			#clock {
+				color: black;
+				font-family: "Arial", sans-serif;
+				width: 100%
+				height: 100%
+				text-align: center;
+				font-size: 50px;
+				padding-top: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<center><div id="clock">000.00</div></center>
+		<script>
+            function getDayProgress() {
+                var time = new Date();
+                return (time.getHours() / 24) + (time.getMinutes() / 1440) + (time.getSeconds() / 86_400) + (time.getMilliseconds() / 86_400_000);
+            }
+
+            function updateOutput() {
+                var outputText = (getDayProgress() * 1000).toFixed(2).padStart(6, '0');
+                document.getElementById("clock").innerHTML = outputText;
+                document.title = outputText;
+            }
+
+            updateOutput();
+            setInterval(updateOutput, 50);
+        </script>
+	</body>
+</html>

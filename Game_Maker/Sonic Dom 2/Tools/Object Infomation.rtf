@@ -1,0 +1,2870 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang5129{\fonttbl{\f0\fnil MS Sans Serif;}}
+\viewkind4\uc1\pard\b\f0\fs24 Information about object: object_Sonic
+\par \b0\fs16 
+\par Sprite: sprite_sonic
+\par Solid: false
+\par Visible: true
+\par Depth: -20
+\par Persistent: true
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute script script_start with arguments (0,0,0,0,0)
+\par 
+\par \b Alarm Event for alarm 0:
+\par \b0 execute code:
+\par 
+\par right_bound = room_width;
+\par bottom_bound = room_height;
+\par 
+\par if (zone == 1 && act == 2) \{bottom_bound = 1800;\}
+\par 
+\par \b  Step Event:
+\par \b0 execute script script_sonic with arguments (0,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_draw with arguments (0,0,0,0,0)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Platform
+\par \b0\fs16 
+\par Sprite: sprite_platform
+\par Solid: false
+\par Visible: true
+\par Depth: -5
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_View
+\par \b0\fs16 
+\par Sprite: <no sprite>
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: true
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b  Step Event:
+\par \b0 execute script script_view with arguments (0,0,0,0,0)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_TV_Shield
+\par \b0\fs16 
+\par Sprite: sprite_tv_shield
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par tv_type = 2
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_TV_Got
+\par \b0\fs16 
+\par Sprite: sprite_tv_got
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_TV_Ring
+\par \b0\fs16 
+\par Sprite: sprite_tv_ring
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par tv_type = 1
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_TV_Super_Sonic
+\par \b0\fs16 
+\par Sprite: sprite_tv_super_sonic
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par tv_type = 3
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_TV_Sonic
+\par \b0\fs16 
+\par Sprite: sprite_tv_sonic
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par tv_type = 4
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Ring
+\par \b0\fs16 
+\par Sprite: sprite_ring
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par if (object_Sonic.time > 0.5) \{
+\par     lost_ring = true;
+\par     alarm[0] = 90;
+\par     vspeed = 5 + floor(random(10));
+\par     if (x < object_Sonic.x) \{
+\par         hspeed = -5 - floor(random(10));
+\par     \} else \{
+\par         hspeed = 5 + floor(random(10));
+\par     \}
+\par \}
+\par 
+\par \b Alarm Event for alarm 0:
+\par \b0 execute code:
+\par 
+\par instance_destroy();
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Wall
+\par \b0\fs16 
+\par Sprite: sprite_wall
+\par Solid: false
+\par Visible: true
+\par Depth: -5
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Top
+\par \b0\fs16 
+\par Sprite: sprite_top
+\par Solid: false
+\par Visible: true
+\par Depth: -5
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Ring_Got
+\par \b0\fs16 
+\par Sprite: <no sprite>
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Spring
+\par \b0\fs16 
+\par Sprite: sprite_spring
+\par Solid: false
+\par Visible: true
+\par Depth: 1
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Ladder
+\par \b0\fs16 
+\par Sprite: sprite_ladder
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Spikes
+\par \b0\fs16 
+\par Sprite: sprite_spikes
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par if (flashing) \{alarm[0] = 45;\}
+\par 
+\par \b Alarm Event for alarm 0:
+\par \b0 execute code:
+\par 
+\par alarm[0] = 45;
+\par instance_change(object_Spikes_Hidden, false);
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Lamp_Post
+\par \b0\fs16 
+\par Sprite: sprite_lamppost
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Lamp_Post_Got
+\par \b0\fs16 
+\par Sprite: sprite_lamp_post_got
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Mob
+\par \b0\fs16 
+\par Sprite: sprite_butterfly
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par if (mob_id == 1) \{
+\par     yellow = true;
+\par     alarm[0] = 45;
+\par \}
+\par 
+\par \b Alarm Event for alarm 0:
+\par \b0 execute code:
+\par 
+\par yellow = !yellow;
+\par alarm[0] = 30;
+\par 
+\par \b Draw Event:
+\par \b0 execute code:
+\par 
+\par switch (mob_id) \{
+\par     case 0: 
+\par         draw_sprite(sprite_butterfly, 0, x, y);
+\par         break;
+\par     case 1: 
+\par         if (yellow) \{draw_circle_color(x, y, 60, c_yellow, c_yellow, false);\}
+\par         draw_sprite(sprite_mob_martian, 0, x, y);
+\par         break;
+\par \}
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Mob_Dead
+\par \b0\fs16 
+\par Sprite: <no sprite>
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_End_TV
+\par \b0\fs16 
+\par Sprite: sprite_end_tv
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_End_TV_Got
+\par \b0\fs16 
+\par Sprite: sprite_end_tv_got
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Start_Control
+\par \b0\fs16 
+\par Sprite: <no sprite>
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par sound_play(sound_dom);
+\par 
+\par zones[1] = "Extra-Terrestrial";
+\par zones[2] = "Martian";
+\par zones[3] = "Pinball";
+\par 
+\par \b  Step Event:
+\par \b0 execute code:
+\par 
+\par if (time == 0) \{alpha_dom = 1;\}
+\par if (time > 2) \{
+\par     if (alpha_dom > 0) \{
+\par         alpha_dom -= 1 / 15;
+\par     \} else if (alpha_credits < 1 && time < 4.5) \{
+\par         alpha_credits += 1 / 15;
+\par     \} else if (time > 4.5 && alpha_credits > 0) \{
+\par         alpha_credits -= 1 / 15;
+\par         if (!sound_isplaying(sound_welcome)) \{sound_play(sound_welcome);\}
+\par     \} else if (time > 4.5 && alpha_credits <= 0 && alpha_welcome < 1) \{
+\par         alpha_welcome += 1 / 15;
+\par     \}
+\par \}
+\par time += 1 / 30;
+\par if (keyboard_check(vk_enter)) \{
+\par     if (level_select)\{
+\par         global.act_select = act_select;
+\par         global.zone_select = zone_select;
+\par     \}
+\par     room_goto_next();
+\par \}
+\par if (keyboard_check(ord("A")) || keyboard_check(ord("D")) || keyboard_check(vk_space)) \{
+\par     level_select = true;
+\par \}
+\par 
+\par if (keyboard_check(ord("R"))) \{game_restart();\}
+\par 
+\par \b Draw Event:
+\par \b0 execute code:
+\par 
+\par if (!level_select) \{
+\par     draw_sprite_ext(sprite_dom, 0, 0, 0, 1, 1, 0, c_white, alpha_dom);
+\par     draw_set_halign(fa_center);
+\par     draw_set_valign(fa_middle);
+\par     draw_set_font(font_title);
+\par     draw_text_color(room_width / 2, room_height /2, "Designed by Dominic Grace#Programmed by Stefan Grace", c_white, c_white, c_white, c_white, alpha_credits);
+\par     draw_set_valign(0);
+\par     draw_sprite_ext(sprite_welcome, 0, 0, 0, 1, 1, 0, c_white, alpha_welcome);
+\par \} else \{
+\par     draw_sprite(sprite_level_select, 0, 970, 190);
+\par     draw_set_halign(fa_left);
+\par     draw_set_font(font_display);
+\par     draw_set_color(c_white);
+\par     var i;
+\par     for (i = 0; i < 3; i += 1) \{
+\par         zone_colors[i] = c_white;
+\par         zone_colors[zone_select] = c_yellow; 
+\par         zone_text = " Zone";
+\par         draw_text_color(200, 200 + (i * 50), zones[i + 1] + " Zone", zone_colors[i], zone_colors[i],  zone_colors[i],  zone_colors[i], 1);
+\par         draw_text(550, 200 + (i * 50), "Act");
+\par         for (j = 0; j < 2; j += 1) \{
+\par             act_colors[j] = c_white;
+\par             if (zone_select == i) \{act_colors[act_select] = c_yellow; \}
+\par             draw_text_color(610 + (j * 20), 200 + (i * 50), j + 1, act_colors[j], act_colors[j],  act_colors[j],  act_colors[j], 1);
+\par         \}
+\par     \}
+\par \}
+\par 
+\par \b Key Press Event for <Left> Key:
+\par \b0 execute code:
+\par 
+\par if (act_select > 0) \{act_select -= 1;\}
+\par 
+\par \b Key Press Event for <Up> Key:
+\par \b0 execute code:
+\par 
+\par if (zone_select > 0) \{zone_select -= 1;\}
+\par 
+\par \b Key Press Event for <Right> Key:
+\par \b0 execute code:
+\par 
+\par if (act_select < 1) \{act_select += 1;\}
+\par 
+\par \b Key Press Event for <Down> Key:
+\par \b0 execute code:
+\par 
+\par if (zone_select < 2) \{zone_select += 1;\}
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Spring_Left
+\par \b0\fs16 
+\par Sprite: sprite_spring_left
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Spring_Right
+\par \b0\fs16 
+\par Sprite: sprite_spring_right
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Dr_Robonic
+\par \b0\fs16 
+\par Sprite: sprite_dr_robonic
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b  Step Event:
+\par \b0 execute code:
+\par 
+\par if (object_Sonic.zone == 2) \{
+\par     if (y == ystart) \{
+\par         vspeed = -4;
+\par     \} else if (y == ystart - 720) \{
+\par         vspeed = 4;
+\par     \}
+\par \} else if (object_Sonic.zone == 3) \{
+\par     if (clock mod 120 == 0) \{
+\par          instance_create(6208, 1152, object_Pinball);
+\par          instance_create(6720, 1152, object_Pinball);
+\par     \}
+\par     clock += 1;
+\par \}
+\par 
+\par if (object_Sonic.boss_hit > 7) \{
+\par     object_Sonic.boss = false;
+\par     object_Sonic.boss_hit = 0;
+\par     object_Sonic.boss_hit_time = 0;
+\par     hspeed = 0;
+\par     sound_play(sound_mob_kill);
+\par     if (object_Sonic.zone == 1) \{
+\par         object_Sonic.bottom_bound = room_height;
+\par         object_Sonic.top_bound = 0;
+\par         object_Sonic.boss_done_extra_terrestrial = true;
+\par         with(object_Spike_Ball) \{instance_destroy();\}
+\par     \} else if (object_Sonic.zone == 2) \{
+\par         object_Sonic.right_bound = room_width;
+\par         object_Sonic.bottom_bound = room_height;
+\par         object_Sonic.top_bound = 0;
+\par         object_Sonic.boss_done_martian = true;
+\par     \} else if (object_Sonic.zone == 3) \{
+\par         object_Sonic.right_bound = room_width;
+\par         object_Sonic.bottom_bound = room_height;
+\par         object_Sonic.top_bound = 0;
+\par         object_Sonic.boss_done_pinball = true;
+\par         with (object_Gate_Horizontal) \{
+\par             if (gate_id == 0) \{instance_destroy();\}
+\par         \}
+\par     \}
+\par     instance_change(object_Exploding, true);
+\par \}
+\par 
+\par \b Draw Event:
+\par \b0 execute code:
+\par 
+\par if (object_Sonic.boss_hitting) \{
+\par     draw_sprite(sprite_dr_robonic_hitting, 0, x, y);
+\par \} else \{
+\par     draw_sprite(sprite_dr_robonic, 0, x, y);
+\par \}
+\par 
+\par if (object_Sonic.boss_hit > 0) \{
+\par     if (object_Sonic.boss_hit < 2) \{
+\par         draw_sprite(sprite_dr_robonic_hit1, 0, x, y);
+\par     \} else if (object_Sonic.boss_hit < 3) \{
+\par         draw_sprite(sprite_dr_robonic_hit2, 0, x, y);
+\par     \} else if (object_Sonic.boss_hit < 4) \{
+\par         draw_sprite(sprite_dr_robonic_hit3, 0, x, y);
+\par     \} else if (object_Sonic.boss_hit < 5) \{
+\par         draw_sprite(sprite_dr_robonic_hit4, 0, x, y);
+\par     \} else if (object_Sonic.boss_hit < 6) \{
+\par         draw_sprite(sprite_dr_robonic_hit5, 0, x, y);
+\par     \} else if (object_Sonic.boss_hit < 7) \{
+\par         draw_sprite(sprite_dr_robonic_hit6, 0, x, y);
+\par     \} else \{
+\par         draw_sprite(sprite_dr_robonic_hit7, 0, x, y);
+\par     \} 
+\par \}
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Exploding
+\par \b0\fs16 
+\par Sprite: sprite_exploding
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Other Event: Animation End:
+\par \b0 execute code:
+\par 
+\par instance_destroy();
+\par if (object_Sonic.zone == 7) \{
+\par     with(object_Sonic) \{instance_destroy();\}
+\par     room_goto_next();
+\par \}
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Gate
+\par \b0\fs16 
+\par Sprite: sprite_gate
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Switch
+\par \b0\fs16 
+\par Sprite: sprite_switch
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b  Step Event:
+\par \b0 execute code:
+\par 
+\par if (place_meeting(x, y, object_Sonic)) \{
+\par     if (!touched_sonic) \{
+\par         touched_sonic = true;
+\par         sound_play(sound_switch);
+\par     \}
+\par \}
+\par 
+\par if (!place_meeting(x, y, object_Sonic)) \{touched_sonic = false;\}
+\par 
+\par \b Collision Event with object object_Sonic:
+\par \b0 execute code:
+\par 
+\par with (object_Gate) \{
+\par     if (gate_id == other.switch_id) \{instance_change(object_Gate_Open, false);\}
+\par \}
+\par 
+\par with (object_Gate_Horizontal) \{
+\par     if (gate_id == other.switch_id) \{instance_change(object_Gate_Open_Horizontal, false);\}
+\par \}
+\par 
+\par \b Draw Event:
+\par \b0 execute code:
+\par 
+\par if (place_meeting(x, y, object_Sonic)) \{
+\par     draw_sprite(sprite_switch_pressed, 0, x, y);
+\par \} else \{
+\par     draw_sprite(sprite_switch, 0, x, y);
+\par \}
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Rising_Platform
+\par \b0\fs16 
+\par Sprite: <no sprite>
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b  Step Event:
+\par \b0 execute code:
+\par 
+\par if ((y > 368 && object_Sonic.act == 3) || (y > 1728 && object_Sonic.act == 2)) \{
+\par     if (place_meeting(x, y - 2, object_Sonic)) \{
+\par         vspeed = -5;
+\par         //object_Sonic.left_bound = 9328;
+\par         object_Sonic.vspeed = -5;
+\par     \}
+\par \} else \{
+\par     if (object_Sonic.act == 3) \{
+\par         y = 368;
+\par     \} else \{
+\par         y = 1728;
+\par     \}
+\par \}
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Saw
+\par \b0\fs16 
+\par Sprite: sprite_saw
+\par Solid: false
+\par Visible: true
+\par Depth: 1
+\par Persistent: false
+\par Parent: object_Danger
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par vspeed = -2;
+\par alarm[0] = 96;
+\par 
+\par 
+\par \b Alarm Event for alarm 0:
+\par \b0 execute code:
+\par 
+\par vspeed *= -1;
+\par alarm[0] = 96;
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Mesh
+\par \b0\fs16 
+\par Sprite: sprite_mesh
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Spring_Weak
+\par \b0\fs16 
+\par Sprite: sprite_spring
+\par Solid: false
+\par Visible: true
+\par Depth: 1
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Sand_16x16
+\par \b0\fs16 
+\par Sprite: sprite_sand_16x16
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Sand_32x32
+\par \b0\fs16 
+\par Sprite: sprite_sand_32x32
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Sand_64x64
+\par \b0\fs16 
+\par Sprite: sprite_sand_64x64
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Sand_128x128
+\par \b0\fs16 
+\par Sprite: sprite_sand_128x128
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Sand_256x256
+\par \b0\fs16 
+\par Sprite: sprite_sand_256x256
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Sand_Slope_Left
+\par \b0\fs16 
+\par Sprite: sprite_sand_slope_left
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Sand_Slope_Left_Steep
+\par \b0\fs16 
+\par Sprite: sprite_sand_slope_left_steep
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Platform_Flat
+\par \b0\fs16 
+\par Sprite: <no sprite>
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par alarm[0] = 60;
+\par 
+\par \b Alarm Event for alarm 0:
+\par \b0 execute code:
+\par 
+\par instance_change(object_Platform_Vertical, true);
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Platform_Vertical
+\par \b0\fs16 
+\par Sprite: <no sprite>
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par alarm[0] = 30;
+\par 
+\par \b Alarm Event for alarm 0:
+\par \b0 execute code:
+\par 
+\par instance_change(object_Platform_Flat, true);
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Sand_Slope_Right
+\par \b0\fs16 
+\par Sprite: sprite_sand_slope_right
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Rock
+\par \b0\fs16 
+\par Sprite: sprite_rock
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Rock_Bottom_Left
+\par \b0\fs16 
+\par Sprite: sprite_rock_top_left
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Rock_Bottom
+\par \b0\fs16 
+\par Sprite: sprite_rock_bottom
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Rock_Left
+\par \b0\fs16 
+\par Sprite: sprite_rock_left
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Rock_Top_Left
+\par \b0\fs16 
+\par Sprite: sprite_rock_top_left
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Rock_Top
+\par \b0\fs16 
+\par Sprite: sprite_rock_top
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Rock_Bottom_Right
+\par \b0\fs16 
+\par Sprite: sprite_rock_bottom_right
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Rock_Right
+\par \b0\fs16 
+\par Sprite: sprite_rock_right
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Star
+\par \b0\fs16 
+\par Sprite: sprite_star
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Star_Hit
+\par \b0\fs16 
+\par Sprite: sprite_star
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par alarm[0] = 10;
+\par 
+\par \b Alarm Event for alarm 0:
+\par \b0 execute code:
+\par 
+\par instance_change(object_Star, false);
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Spikes_Hidden
+\par \b0\fs16 
+\par Sprite: <no sprite>
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Alarm Event for alarm 0:
+\par \b0 execute code:
+\par 
+\par alarm[0] = 45;
+\par 
+\par switch (dir) \{
+\par     case "left": instance_change(object_Spikes_Left, false); break;
+\par     case "right": instance_change(object_Spikes_Right, false); break;
+\par     case "down": instance_change(object_Spikes_Upsidedown, false); break;
+\par     default: instance_change(object_Spikes, false); break;
+\par \}
+\par 
+\par 
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Gate_Open
+\par \b0\fs16 
+\par Sprite: <no sprite>
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Spikes_Upsidedown
+\par \b0\fs16 
+\par Sprite: sprite_spikes_upsidedown
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: object_Spikes
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par dir = "down";
+\par call the inherited event of the parent object
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Background
+\par \b0\fs16 
+\par Sprite: <no sprite>
+\par Solid: false
+\par Visible: true
+\par Depth: -2
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Flashing_Platform
+\par \b0\fs16 
+\par Sprite: <no sprite>
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par alarm[0] = 50;
+\par 
+\par \b Alarm Event for alarm 0:
+\par \b0 execute code:
+\par 
+\par instance_change(object_Flashing_Platform_Hidden, true);
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Flashing_Platform_Hidden
+\par \b0\fs16 
+\par Sprite: <no sprite>
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par alarm[0] = 20;
+\par 
+\par \b Alarm Event for alarm 0:
+\par \b0 execute code:
+\par 
+\par instance_change(object_Flashing_Platform, true);
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Stop_Platform_Falling
+\par \b0\fs16 
+\par Sprite: sprite_mask_128x128
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Alarm Event for alarm 0:
+\par \b0 execute code:
+\par 
+\par instance_destroy();
+\par 
+\par \b Collision Event with object object_Platform:
+\par \b0 for other object: execute code:
+\par 
+\par vspeed = 0;
+\par 
+\par execute code:
+\par 
+\par if (hit == false) \{
+\par     alarm[0] = 5;
+\par     hit = true;
+\par \}
+\par 
+\par \b Collision Event with object object_End_TV_Got:
+\par \b0 for other object: execute code:
+\par 
+\par vspeed = 0;
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Credits_Control
+\par \b0\fs16 
+\par Sprite: <no sprite>
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par sound_play(sound_extra_terrestrial);
+\par 
+\par \b  Step Event:
+\par \b0 execute code:
+\par 
+\par seconds += 1 / 30;
+\par 
+\par if (seconds < 10) \{
+\par 
+\par \} else if (seconds < 20) \{
+\par     if (!sound_isplaying(sound_extra_terrestrial)) \{sound_play(sound_extra_terrestrial);\}
+\par     credits_stage = 1;
+\par \} else if (seconds < 30) \{
+\par     if (!sound_isplaying(sound_martian)) \{sound_play(sound_martian);\}
+\par     credits_stage = 2;
+\par \} else if (seconds < 40) \{
+\par     if (!sound_isplaying(sound_martian)) \{sound_play(sound_martian);\}
+\par     credits_stage = 3;
+\par \} else if (seconds < 50) \{
+\par     if (!sound_isplaying(sound_pinball)) \{sound_play(sound_pinball);\}
+\par     credits_stage = 4;
+\par \} else if (seconds < 60) \{
+\par     if (!sound_isplaying(sound_pinball)) \{sound_play(sound_pinball);\}
+\par     credits_stage = 5;
+\par \} else \{
+\par     if (!welcome_sound_has_played) \{
+\par         sound_play(sound_welcome);
+\par         welcome_sound_has_played = true;
+\par     \}
+\par     credits_stage = 6;
+\par \}
+\par 
+\par switch (floor(seconds) mod 10) \{
+\par     case 0: 
+\par         fade = seconds mod 1;
+\par         break;
+\par     case 9:
+\par         fade = 1 - seconds mod 1;
+\par         break;
+\par     default: 
+\par         fade = 1;
+\par         break;
+\par \}
+\par 
+\par if (keyboard_check(ord("R"))) \{game_restart();\}
+\par 
+\par 
+\par \b Draw Event:
+\par \b0 execute code:
+\par 
+\par draw_set_halign(fa_center);
+\par draw_set_valign(fa_middle);
+\par draw_set_font(font_title);
+\par draw_set_color(c_white);
+\par draw_set_alpha(fade);
+\par if (credits_stage == 0) \{
+\par     draw_text(room_width / 2, room_height / 2, "Level Designer:#Dominic Grace");
+\par \} else if (credits_stage == 1) \{
+\par     draw_text(room_width / 2, room_height / 2, "Programmer:#Stefan Grace");
+\par \} else if (credits_stage == 2) \{
+\par     draw_text(room_width / 2, 80, "Music:");
+\par     draw_set_halign(fa_left);
+\par     draw_set_font(font_display);
+\par     draw_text(64, room_height / 2, "#Extra-Terrestrial: Kevin MacLeod - 8bit Dungeon Boss"
+\par     + "##Martian: Kevin MacLeod - Secret of Tiki Island"
+\par     + "##Pinball: Kevin MacLeod - Pookatori and Friends");
+\par \} else if (credits_stage == 3) \{
+\par     draw_text(room_width / 2, 80, "Graphics:");
+\par     draw_set_halign(fa_left);
+\par     draw_set_font(font_display);
+\par     draw_text(64, room_height / 2, "#Martian Mob: Drawn by Stefan Grace (MS Paint)"
+\par     + "##Green Butterfly: Videoed by Debbie Grace, edited by Stefan Grace"
+\par     + "##Rocket: Drawn by Stefan Grace (MS Paint)"
+\par     + "##Black Hole: Drawn by Stefan Grace (MS Paint)"
+\par     + "##Saw Bucket: Drawn by Stefan Grace (MS Paint)");
+\par \} else if (credits_stage == 4) \{
+\par     draw_text(room_width / 2, 80, "Graphics:");
+\par     draw_set_halign(fa_left);
+\par     draw_set_font(font_display);
+\par     draw_text(64, room_height / 2, "#Arrow: Drawn by Stefan Grace (MS Paint)"
+\par     + "##Wood: https://pixabay.com/photos/vintage-wood-texture-wooden-wall-1557993/"
+\par     + "##Tornado: https://pixabay.com/vectors/tornado-storm-wind-rotation-46793/"
+\par     + "##Pinball: Drawn by Stefan Grace (LibreOffice Draw)"
+\par     + "##Bouncers: Drawn by Stefan Grace (MS Paint)");
+\par \} else if (credits_stage == 5) \{
+\par     draw_text(room_width / 2, room_height / 2, "Created With:#Game Maker 7.0 Pro");
+\par \} else \{
+\par     draw_set_valign(fa_top);
+\par     draw_set_halign(fa_left);
+\par     draw_sprite(sprite_level_select, 0, 300, 130);
+\par     draw_text_color(700, 100, "Sonic The#Hedgehog", c_white, c_white, c_white, c_white, 1);
+\par     draw_text_color(700, 270, "Dom", c_blue, c_blue, c_blue, c_blue, 1);
+\par     draw_text_color(900, 270, "2", c_red, c_red, c_red, c_red, 1);
+\par     draw_set_font(font_display);
+\par     draw_set_halign(fa_center);
+\par     draw_text_color(room_width / 2, room_height - 50, "Press R to restart, press Esc to exit", c_white, c_white, c_white, c_white, 1);
+\par \}
+\par draw_set_alpha(1);
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Rocket
+\par \b0\fs16 
+\par Sprite: sprite_rocket
+\par Solid: false
+\par Visible: true
+\par Depth: -10
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Metal
+\par \b0\fs16 
+\par Sprite: sprite_metal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Space_Station
+\par \b0\fs16 
+\par Sprite: sprite_space_station
+\par Solid: false
+\par Visible: true
+\par Depth: 1
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Crushing_Block
+\par \b0\fs16 
+\par Sprite: sprite_crushing_block
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par alarm[0] = 30;
+\par edge[0] = instance_create(x, y, object_Platform);
+\par edge[1] = instance_create(x + 32, y, object_Platform);
+\par edge[2] = instance_create(x + 64, y, object_Platform);
+\par edge[3] = instance_create(x, y, object_Wall);
+\par edge[4] = instance_create(x, y + 32, object_Wall);
+\par edge[5] = instance_create(x, y + 64, object_Wall);
+\par edge[6] = instance_create(x + sprite_width, y, object_Wall);
+\par edge[7] = instance_create(x + sprite_width, y + 32, object_Wall);
+\par edge[8] = instance_create(x + sprite_width, y + 64, object_Wall);
+\par edge[9] = instance_create(x , y + sprite_height, object_Top);
+\par edge[10] = instance_create(x + 32, y + sprite_height, object_Top);
+\par edge[11] = instance_create(x + 64, y + sprite_height, object_Top);
+\par 
+\par \b Alarm Event for alarm 0:
+\par \b0 execute code:
+\par 
+\par if (y == ystart) \{
+\par     y = ystart + 112;
+\par     var i;
+\par     for (i = 0; i < 12; i += 1) \{
+\par         with (edge[i]) \{y = ystart + 112;\}
+\par     \}
+\par \} else \{
+\par     y = ystart;
+\par     for (i = 0; i < 12; i += 1) \{
+\par         with (edge[i]) \{y = ystart;\}
+\par     \}
+\par \}
+\par 
+\par if (place_meeting(x, y, object_Sonic)) \{
+\par     with (object_Sonic) \{script_die();\}
+\par \}
+\par 
+\par alarm[0] = 30;
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Fan_Up
+\par \b0\fs16 
+\par Sprite: sprite_fan_up
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b  Step Event:
+\par \b0 execute code:
+\par 
+\par if (object_Sonic.x > x - 192 && object_Sonic.x < x + 256) \{
+\par     if (object_Sonic.y < y && object_Sonic.y > y - 320) \{
+\par         object_Sonic.vspeed -= round(((320 - (y - object_Sonic.y)) - abs(x - object_Sonic.x)) / 30);
+\par     \}
+\par \}
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Fan_Down
+\par \b0\fs16 
+\par Sprite: sprite_fan_down
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b  Step Event:
+\par \b0 execute code:
+\par 
+\par if (object_Sonic.x > x - 192 && object_Sonic.x < x + 256) \{
+\par     if (object_Sonic.y > y && object_Sonic.y < y + 320) \{
+\par         //object_Sonic.vspeed += round(((320 - (object_Sonic.y - y)) - abs(x - object_Sonic.x)) / 30);
+\par         object_Sonic.y += round(((320 - (object_Sonic.y - y)) - abs(x - object_Sonic.x)) / 10);
+\par 
+\par     \}
+\par \}
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Rotating_Platform
+\par \b0\fs16 
+\par Sprite: <no sprite>
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: sprite_mask_128x32
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par var i;
+\par for(i = 0; i < 4; i += 1) \{
+\par     platform[i] = instance_create(x + (i * 32), y, object_Platform);
+\par     with (platform[i]) \{path_start(path_rotating_platform, 5, 1, false);\}
+\par \}
+\par 
+\par alarm[1] = 1; // create spikes 1 step after platform
+\par 
+\par path_start(path_rotating_platform, 5, 1, false);
+\par 
+\par if (main_platform) \{
+\par     platforms_left_to_make = 7;
+\par     interval = 52;
+\par     alarm[0] = interval;
+\par \}
+\par 
+\par \b Alarm Event for alarm 0:
+\par \b0 execute code:
+\par 
+\par if (platforms_left_to_make > 0) \{
+\par     platforms_left_to_make -= 1;
+\par     rotating_platform = instance_create(xstart, ystart, object_Rotating_Platform);
+\par     rotating_platform.has_spikes = has_spikes;
+\par     alarm[0] = interval;
+\par \}
+\par 
+\par \b Alarm Event for alarm 1:
+\par \b0 execute code:
+\par 
+\par if (has_spikes) \{
+\par     spikes = instance_create(x + 64, y + 32, object_Spikes_Upsidedown);
+\par     with (spikes) \{path_start(path_rotating_platform, 5, 1, false);\}
+\par \}
+\par 
+\par \b  Step Event:
+\par \b0 execute script script_stay_on_platform with arguments (0,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_draw_platform_rock with arguments (0,0,0,0,0)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Saw_Bucket
+\par \b0\fs16 
+\par Sprite: sprite_saw_bucket
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par speed_path = 6
+\par if (reverse) \{
+\par     speed_path *= -1
+\par \} 
+\par 
+\par var i;
+\par for(i = 0; i < 6; i += 1) \{
+\par     platform[i] = instance_create(x + (i * 32), y, object_Platform);
+\par     with (platform[i]) \{path_start(path_spike_ball, other.speed_path, 3, false);\}
+\par \}
+\par 
+\par path_start(path_spike_ball, speed_path, 3, false);
+\par 
+\par \b  Step Event:
+\par \b0 execute script script_stay_on_platform with arguments (0,0,0,0,0)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Moving_Platform
+\par \b0\fs16 
+\par Sprite: <no sprite>
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: sprite_mask_128x128
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par var i;
+\par for(i = 0; i < 4; i += 1) \{
+\par     platform[i] = instance_create(x + (i * 32), y, object_Platform);
+\par \}
+\par 
+\par \b  Step Event:
+\par \b0 execute code:
+\par 
+\par var i;
+\par for(i = 0; i < 4; i += 1) \{
+\par     platform[i].x = other.x + (i * 32);
+\par     platform[i].y = other.y;
+\par \}
+\par 
+\par if (y == ystart) \{
+\par     if (place_meeting(x, y - 16, object_Sonic)) \{vspeed = 6;\}
+\par \}
+\par 
+\par if (y >= 1664) \{
+\par     vspeed = 0;
+\par     hspeed = 6;
+\par \}
+\par 
+\par if (x >= 3728) \{
+\par     hspeed = 0;
+\par \}
+\par 
+\par 
+\par 
+\par \b End Step Event:
+\par \b0 execute script script_stay_on_platform with arguments (0,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_draw_platform_rock with arguments (0,0,0,0,0)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Black_Hole
+\par \b0\fs16 
+\par Sprite: sprite_black_hole
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Spike_Ball
+\par \b0\fs16 
+\par Sprite: sprite_spike_ball
+\par Solid: false
+\par Visible: true
+\par Depth: 4
+\par Persistent: false
+\par Parent: object_Danger
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par if (object_Sonic.zone == 3) \{
+\par     path_start(path_pinball_spike_ball, 12, 1, false);
+\par \} else \{
+\par     path_start(path_boss_spike_ball, 12, 1, false);
+\par \}
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Martian_Pole
+\par \b0\fs16 
+\par Sprite: sprite_martian_pole
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Mod_Exploding
+\par \b0\fs16 
+\par Sprite: sprite_exploding
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Other Event: Animation End:
+\par \b0 execute code:
+\par 
+\par instance_change(object_Mob_Dead, false);
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Wood
+\par \b0\fs16 
+\par Sprite: sprite_wood
+\par Solid: false
+\par Visible: true
+\par Depth: 1
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par if (right) \{
+\par     spikes = instance_create(x + sprite_width, y, object_Spikes_Right);
+\par \} else \{
+\par     spikes = instance_create(x, y, object_Spikes_Left);
+\par \}
+\par 
+\par var i;
+\par for (i = 0; i < sprite_width / 32; i += 1) \{
+\par     platforms[i] = instance_create(x + (i * 32), y, object_Platform);
+\par     tops[i] = instance_create(x + (i * 32), y + sprite_height, object_Top);
+\par \}
+\par for (i = 0; i < sprite_height / 32; i += 1) \{
+\par     walls_left[i] = instance_create(x, y + (i * 32), object_Wall);
+\par     walls_right[i] = instance_create(x + sprite_width, y + (i * 32), object_Wall);
+\par \}
+\par 
+\par \b  Step Event:
+\par \b0 execute code:
+\par 
+\par if (clock < 200 + offset) \{
+\par     if ((x < xstart + sprite_width && !right) || (x > xstart - sprite_width && right)) \{
+\par         move = 4;
+\par     \} else \{
+\par         move = 0;
+\par     \}
+\par \} else \{
+\par     if ((x > xstart && !right) || (x < xstart && right)) \{
+\par         move = -4;
+\par     \} else \{
+\par         move = 0;
+\par     \}
+\par \}
+\par 
+\par if (right) \{move *= -1;\}
+\par 
+\par x += move;
+\par spikes.x += move;
+\par var i;
+\par for (i = 0; i < 6; i += 1) \{
+\par     platforms[i].x += move;
+\par     tops[i].x += move;
+\par \}
+\par for (i = 0; i < 2; i += 1) \{
+\par     walls_left[i].x += move;
+\par     walls_right[i].x += move;
+\par \}
+\par 
+\par 
+\par clock += 1;
+\par 
+\par if (clock > 400 + offset) \{clock = offset;\}
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Spikes_Left
+\par \b0\fs16 
+\par Sprite: sprite_spikes_left
+\par Solid: false
+\par Visible: true
+\par Depth: 1
+\par Persistent: false
+\par Parent: object_Spikes
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par dir = "left";
+\par call the inherited event of the parent object
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Arrow_Down
+\par \b0\fs16 
+\par Sprite: sprite_arrow_down
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: object_Danger
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par alarm[0] = 30;
+\par 
+\par \b Alarm Event for alarm 0:
+\par \b0 execute code:
+\par 
+\par instance_change(object_Arrow_Down_Hidden, true);
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Arrow_Down_Hidden
+\par \b0\fs16 
+\par Sprite: <no sprite>
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par alarm[0] = 30;
+\par 
+\par \b Alarm Event for alarm 0:
+\par \b0 execute code:
+\par 
+\par instance_change(object_Arrow_Down, true);
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Danger
+\par \b0\fs16 
+\par Sprite: <no sprite>
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Line
+\par \b0\fs16 
+\par Sprite: sprite_line
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_cable_car
+\par \b0\fs16 
+\par Sprite: sprite_cable_car
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par var i;
+\par for (i = 0; i < 3; i += 1) \{
+\par     platforms[i] = instance_create(x + (i * 32), y, object_Platform);
+\par \}
+\par 
+\par /*
+\par if (backwards) \{
+\par     dir = -1;
+\par \} else \{
+\par     dir = 1;
+\par \}
+\par */
+\par 
+\par \b  Step Event:
+\par \b0 execute code:
+\par 
+\par if (y > room_height or place_meeting(x, y, object_Spikes)) \{
+\par     path_end();
+\par     x = xstart;
+\par     y = ystart;
+\par     for (i = 0; i < 3; i += 1) \{
+\par         with (platforms[i]) \{
+\par             path_end();
+\par             x = xstart;
+\par             y = ystart;    
+\par         \}
+\par     \}
+\par     on_path = false;
+\par \}
+\par 
+\par \b End Step Event:
+\par \b0 execute script script_stay_on_platform with arguments (0,0,0,0,0)
+\par 
+\par \b Collision Event with object object_Sonic:
+\par \b0 execute code:
+\par 
+\par if (!on_path) \{
+\par     if (backwards) \{
+\par         path_start(path_cable_car_backwards, 6, 0, false);
+\par     \} else \{
+\par         path_start(path_cable_car, 6, 0, false);
+\par     \}
+\par     for (i = 0; i < 3; i += 1) \{
+\par         with (platforms[i]) \{
+\par              if (other.backwards) \{
+\par                 path_start(path_cable_car_backwards, 6, 0, false);
+\par             \} else \{
+\par                 path_start(path_cable_car, 6, 0, false);
+\par             \}
+\par         \}
+\par     \}
+\par     on_path = true;
+\par \}
+\par 
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Tornado
+\par \b0\fs16 
+\par Sprite: sprite_tornado
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Woden_Block
+\par \b0\fs16 
+\par Sprite: sprite_woden_block
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par switch (block_id) \{
+\par     case 0: // left
+\par         left_x = xstart;
+\par         left_y = ystart;
+\par         break;
+\par     case 1: // middle
+\par         left_x = xstart - sprite_width;
+\par         left_y = ystart + sprite_height;
+\par         break;
+\par     case 2: // right
+\par         left_x = xstart - (sprite_width * 2);
+\par         left_y = ystart;
+\par         break;
+\par \}
+\par 
+\par var i;
+\par for (i = 0; i < sprite_width / 32; i += 1) \{
+\par     platforms[i] = instance_create(x + (i * 32), y, object_Platform);
+\par     tops[i] = instance_create(x + (i * 32), y + sprite_height, object_Top);
+\par \}
+\par for (i = 0; i < sprite_height / 32; i += 1) \{
+\par     walls_left[i] = instance_create(x, y + (i * 32), object_Wall);
+\par     walls_right[i] = instance_create(x + sprite_width, y + (i * 32), object_Wall);
+\par \}
+\par 
+\par \b  Step Event:
+\par \b0 execute code:
+\par 
+\par var x_move y_move;
+\par 
+\par if (x == left_x && y > left_y - sprite_height) \{
+\par     y_move = -4;
+\par \} else if (x < left_x + (sprite_width * 2) && y == left_y - sprite_height) \{
+\par     x_move = 4;
+\par \} else if (x == left_x + (sprite_width * 2) && y < left_y) \{
+\par     y_move = 4;
+\par \} else if (x > left_x && y == left_y) \{
+\par     x_move = -4;
+\par \}
+\par 
+\par x += x_move;
+\par y += y_move;
+\par 
+\par var i;
+\par for (i = 0; i < sprite_width / 32; i += 1) \{
+\par     with (platforms[i]) \{x += x_move; y += y_move;\}
+\par     with (tops[i]) \{x += x_move; y += y_move;\}
+\par \}
+\par for (i = 0; i < sprite_height / 32; i += 1) \{
+\par     with (walls_left[i]) \{x += x_move; y += y_move;\}
+\par     with (walls_right[i]) \{x += x_move; y += y_move;\}
+\par \}
+\par 
+\par \b End Step Event:
+\par \b0 execute code:
+\par 
+\par var x_move y_move;
+\par x_move = x - last_x;
+\par y_move = y - last_y;
+\par 
+\par last_x = x;
+\par last_y = y;
+\par 
+\par for (i = 0; i < sprite_height / 32; i += 1) \{
+\par     with (walls_left[i]) \{
+\par         if (place_meeting(x, y, object_Sonic)) \{
+\par             object_Sonic.x += x_move;
+\par             exit;
+\par         \}
+\par     \}
+\par     with (walls_right[i]) \{
+\par         if (place_meeting(x, y, object_Sonic)) \{
+\par             with (object_Sonic) \{
+\par                 if (place_meeting(x, y, object_Block_Crush_Detect)) \{script_die();\}
+\par             \}
+\par             object_Sonic.x += x_move;
+\par             exit;
+\par         \}
+\par     \}
+\par \}
+\par 
+\par for (i = 0; i < sprite_width / 32; i += 1) \{
+\par     with (platforms[i]) \{
+\par         if (place_meeting(x, y - 8, object_Sonic)) \{
+\par             with (object_Sonic) \{
+\par                 if (!place_meeting(x, y, object_Wall)) \{
+\par                     x += x_move;
+\par                     y += y_move;
+\par                 \}
+\par             \}
+\par             exit;
+\par         \}
+\par     \}
+\par     with (tops[i]) \{
+\par         if (place_meeting(x, y, object_Sonic) && y_move > 0) \{
+\par             with (object_Sonic) \{script_die();\}
+\par             exit;
+\par         \}
+\par     \}
+\par \}
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Line_Backwards
+\par \b0\fs16 
+\par Sprite: sprite_line_backwards
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Destructible_Block
+\par \b0\fs16 
+\par Sprite: sprite_destructible_block
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Draw Event:
+\par \b0 execute code:
+\par 
+\par draw_sprite(sprite_sand_128x128, 0, x, y);
+\par draw_sprite(sprite_destructible_block, 0, x, y);
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Tunnel_Martian_Act_1
+\par \b0\fs16 
+\par Sprite: sprite_tunnel_martian_act_1
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: object_Tunnle
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Destructible_Block_Destroyed
+\par \b0\fs16 
+\par Sprite: <no sprite>
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Tunnle
+\par \b0\fs16 
+\par Sprite: <no sprite>
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Block_Crush_Detect
+\par \b0\fs16 
+\par Sprite: sprite_martian_background
+\par Solid: false
+\par Visible: true
+\par Depth: 20
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Spikes_Right
+\par \b0\fs16 
+\par Sprite: sprite_spikes_right
+\par Solid: false
+\par Visible: true
+\par Depth: 1
+\par Persistent: false
+\par Parent: object_Spikes
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par dir = "right";
+\par call the inherited event of the parent object
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Tunnel_Martian_Act_2
+\par \b0\fs16 
+\par Sprite: sprite_tunnel_martian_act_2
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: object_Tunnle
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Spike_Ball_Martain_Boss
+\par \b0\fs16 
+\par Sprite: sprite_spike_ball
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: object_Danger
+\par Mask: <same as sprite>
+\par 
+\par \b  Step Event:
+\par \b0 execute code:
+\par 
+\par y = object_Dr_Robonic.y + 192 + y_offset;
+\par 
+\par if (steps mod 120 < 30) \{
+\par     hspeed += 0.5;
+\par     y_offset += 2;
+\par \} else if (steps mod 120 < 60) \{
+\par     hspeed -= 0.5;
+\par     y_offset -= 2;
+\par \} else if (steps mod 120 < 90) \{
+\par     hspeed -= 0.5;
+\par     y_offset += 2;
+\par \} else if (steps mod 120 < 120) \{
+\par     hspeed += 0.5;
+\par     y_offset -= 2;
+\par \}
+\par 
+\par steps += 1;
+\par 
+\par \b Draw Event:
+\par \b0 execute code:
+\par 
+\par var i chain_x chain_y;
+\par 
+\par chain_x[0] = x;
+\par chain_x[1] = mean(x, x, x, x, x, x, x, x, x, x, object_Dr_Robonic.x);
+\par chain_x[2] = mean(x, x, x, x, x, x, x, x, x, object_Dr_Robonic.x, object_Dr_Robonic.x);
+\par chain_x[3] = mean(x, x, x, x, x, x, x, x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x);
+\par chain_x[4] = mean(x, x, x, x, x, x, x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x);
+\par chain_x[5] = mean(x, x, x, x, x, x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x);
+\par chain_x[6] = mean(x, x, x, x, x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x);
+\par chain_x[7] = mean(x, x, x, x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x);
+\par chain_x[8] = mean(x, x, x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x);
+\par chain_x[9] = mean(x, x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x);
+\par chain_x[10] = mean(x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x, object_Dr_Robonic.x);
+\par chain_x[11] = object_Dr_Robonic.x;
+\par 
+\par chain_y[0] = y;
+\par chain_y[1] = mean(y, y, y, y, y, y, y, y, y, y, object_Dr_Robonic.y);
+\par chain_y[2] = mean(y, y, y, y, y, y, y, y, y, object_Dr_Robonic.y, object_Dr_Robonic.y);
+\par chain_y[3] = mean(y, y, y, y, y, y, y, y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y);
+\par chain_y[4] = mean(y, y, y, y, y, y, y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y);
+\par chain_y[5] = mean(y, y, y, y, y, y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y);
+\par chain_y[6] = mean(y, y, y, y, y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y);
+\par chain_y[7] = mean(y, y, y, y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y);
+\par chain_y[8] = mean(y, y, y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y);
+\par chain_y[9] = mean(y, y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y);
+\par chain_y[10] = mean(y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y, object_Dr_Robonic.y);
+\par chain_y[11] = object_Dr_Robonic.y;
+\par 
+\par // draw chain
+\par for (i = 0; i < 12; i += 1) \{
+\par     draw_circle_color(chain_x[i], chain_y[i], 12, c_black, c_black, true);
+\par \} 
+\par 
+\par draw_sprite(sprite_spike_ball, 0, x, y);
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Mesh_Slope
+\par \b0\fs16 
+\par Sprite: sprite_mesh_slope
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Bouncer_Green
+\par \b0\fs16 
+\par Sprite: sprite_bouncer_green
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: object_Bouncer
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par original_color = c_green;
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Bouncer
+\par \b0\fs16 
+\par Sprite: <no sprite>
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Bouncer_Lime
+\par \b0\fs16 
+\par Sprite: sprite_bouncer_yellow
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: object_Star_Hit
+\par Mask: <same as sprite>
+\par 
+\par \b Alarm Event for alarm 0:
+\par \b0 execute code:
+\par 
+\par instance_change(object_Bouncer_Yellow, false);
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Bouncer_Orange
+\par \b0\fs16 
+\par Sprite: sprite_bouncer_red
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: object_Star_Hit
+\par Mask: <same as sprite>
+\par 
+\par \b Alarm Event for alarm 0:
+\par \b0 execute code:
+\par 
+\par instance_change(object_Bouncer_Red, false);
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Bouncer_Yellow
+\par \b0\fs16 
+\par Sprite: sprite_bouncer_yellow
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: object_Bouncer
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par original_color = c_yellow;
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Bouncer_Red
+\par \b0\fs16 
+\par Sprite: sprite_bouncer_red
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: object_Bouncer
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par original_color = c_red;
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Bouncer_Gone
+\par \b0\fs16 
+\par Sprite: <no sprite>
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Tunnle_Pinball_Act1_T1
+\par \b0\fs16 
+\par Sprite: sprite_tunnle_pinball_act_1_t1
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: object_Tunnle
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Line_Horizontal
+\par \b0\fs16 
+\par Sprite: sprite_line_horizontal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Line_Vertical
+\par \b0\fs16 
+\par Sprite: sprite_line_vertical
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Spring_Woosh
+\par \b0\fs16 
+\par Sprite: sprite_spring_woosh
+\par Solid: false
+\par Visible: true
+\par Depth: -2
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b  Step Event:
+\par \b0 execute code:
+\par 
+\par if (place_meeting(x, y, object_Sonic)) \{
+\par     y = ystart + object_Sonic.woosh;
+\par \} else \{
+\par     y = ystart;
+\par \}
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Pinball_Crushing_Block
+\par \b0\fs16 
+\par Sprite: sprite_pinball_crushing_block
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: object_Crushing_Block
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par alarm[0] = 30;
+\par edge[0] = instance_create(x, y, object_Platform);
+\par edge[1] = instance_create(x + 32, y, object_Platform);
+\par edge[2] = instance_create(x + 64, y, object_Platform);
+\par edge[3] = instance_create(x + 96, y, object_Platform);
+\par edge[4] = instance_create(x, y, object_Wall);
+\par edge[5] = instance_create(x, y + 32, object_Wall);
+\par edge[6] = instance_create(x, y + 64, object_Wall);
+\par edge[7] = instance_create(x, y + 96, object_Wall);
+\par edge[8] = instance_create(x + sprite_width, y, object_Wall);
+\par edge[9] = instance_create(x + sprite_width, y + 32, object_Wall);
+\par edge[10] = instance_create(x + sprite_width, y + 64, object_Wall);
+\par edge[11] = instance_create(x + sprite_width, y + 96, object_Wall);
+\par edge[12] = instance_create(x , y + sprite_height, object_Top);
+\par edge[13] = instance_create(x + 32, y + sprite_height, object_Top);
+\par edge[14] = instance_create(x + 64, y + sprite_height, object_Top);
+\par edge[15] = instance_create(x + 96, y + sprite_height, object_Top);
+\par 
+\par \b Alarm Event for alarm 0:
+\par \b0 execute code:
+\par 
+\par if (y == ystart) \{
+\par     y = ystart + 128;
+\par     var i;
+\par     for (i = 0; i < 16; i += 1) \{
+\par         with (edge[i]) \{y = ystart + 128;\}
+\par     \}
+\par \} else \{
+\par     y = ystart;
+\par     for (i = 0; i < 16; i += 1) \{
+\par         with (edge[i]) \{y = ystart;\}
+\par     \}
+\par \}
+\par 
+\par if (place_meeting(x, y, object_Sonic)) \{
+\par     with (object_Sonic) \{script_die();\}
+\par \}
+\par 
+\par alarm[0] = 30;
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Spring_Woosh_Base
+\par \b0\fs16 
+\par Sprite: sprite_spring_woosh_base_full
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Draw Event:
+\par \b0 execute code:
+\par 
+\par if (object_Sonic.woosh >= 32 && place_meeting(x, y, object_Sonic)) \{
+\par     draw_sprite(sprite_spring_woosh_base_bottom, 0, x, y);
+\par \} else \{
+\par     draw_sprite(sprite_spring_woosh_base_full, 0, x, y);
+\par \}
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Flipper
+\par \b0\fs16 
+\par Sprite: sprite_flipper_down
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par alarm[0] = 30;
+\par 
+\par \b Alarm Event for alarm 0:
+\par \b0 execute code:
+\par 
+\par up = true;
+\par if (place_meeting(x, y, object_Sonic)) \{
+\par     object_Sonic.y -= 24;
+\par     if (!sound_isplaying(sound_flipper)) \{sound_play(sound_flipper);\}
+\par     object_Sonic.vspeed = -28;
+\par \}
+\par alarm[1] = 30;
+\par 
+\par \b Alarm Event for alarm 1:
+\par \b0 execute code:
+\par 
+\par up = false;
+\par alarm[0] = 30;
+\par 
+\par \b Draw Event:
+\par \b0 execute code:
+\par 
+\par if (up) \{
+\par     draw_sprite(sprite_flipper_up, 0, x, y);
+\par \} else \{
+\par     draw_sprite(sprite_flipper_down, 0, x, y);
+\par \}
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Flipper_Right
+\par \b0\fs16 
+\par Sprite: sprite_flipper_down_right
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: object_Flipper
+\par Mask: <same as sprite>
+\par 
+\par \b Draw Event:
+\par \b0 execute code:
+\par 
+\par if (up) \{
+\par     draw_sprite(sprite_flipper_up_right, 0, x, y);
+\par \} else \{
+\par     draw_sprite(sprite_flipper_down_right, 0, x, y);
+\par \}
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Mesh_Front
+\par \b0\fs16 
+\par Sprite: sprite_mesh_front
+\par Solid: false
+\par Visible: true
+\par Depth: -40
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Line_Horizontal_Front
+\par \b0\fs16 
+\par Sprite: sprite_line_horizontal_front
+\par Solid: false
+\par Visible: true
+\par Depth: -40
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Line_Vertical_Front
+\par \b0\fs16 
+\par Sprite: sprite_line_vertical_front
+\par Solid: false
+\par Visible: true
+\par Depth: -40
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Spike_Ball_Side_To_Side
+\par \b0\fs16 
+\par Sprite: sprite_spike_ball
+\par Solid: false
+\par Visible: true
+\par Depth: 4
+\par Persistent: false
+\par Parent: object_Danger
+\par Mask: <same as sprite>
+\par 
+\par \b  Step Event:
+\par \b0 execute code:
+\par 
+\par if (x <= xstart) \{
+\par     dir = 1;
+\par \} else if (x >= xstart + 256) \{
+\par     dir = -1;
+\par \}
+\par 
+\par if (dir == 1) \{
+\par     if (hspeed < 6) \{hspeed += 1;\}
+\par \} else if (dir == -1) \{
+\par     if (hspeed > -6) \{hspeed -= 1;\}
+\par \}
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Tunnle_Pinball_Act1_T2
+\par \b0\fs16 
+\par Sprite: sprite_tunnle_pinball_act_1_t2
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: object_Tunnle
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Spring_Platform
+\par \b0\fs16 
+\par Sprite: sprite_spring_platform
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par items[0] = instance_create(x, y, object_Platform);
+\par items[1] = instance_create(x + 32, y, object_Platform);
+\par items[2] = instance_create(x, y + 32, object_Top);
+\par items[3] = instance_create(x + 32, y + 32, object_Top);
+\par items[4] = instance_create(x, y, object_Wall);
+\par items[5] = instance_create(x + 64, y, object_Wall);
+\par items[6] = instance_create(x, y - 32, object_Spring);
+\par 
+\par \b End Step Event:
+\par \b0 execute code:
+\par 
+\par if (x <= xstart) \{
+\par     hspeed = 4;
+\par \} else if (x >= 2864)\{
+\par     hspeed = -4
+\par \}
+\par 
+\par var i;
+\par for (i = 0; i < 7; i += 1) \{
+\par     with (items[i]) \{x = other.x;\}
+\par \}
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Tunnle_Pinball_Act1_T3
+\par \b0\fs16 
+\par Sprite: sprite_tunnle_pinball_act_1_t3
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: object_Tunnle
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Mesh_Slope_Negitive
+\par \b0\fs16 
+\par Sprite: sprite_mesh_slope_negitive
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: sprite_Mesh_Slope_Backwards
+\par \b0\fs16 
+\par Sprite: sprite_mesh_slope_backwards
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: sprite_Mesh_Slope_Backwards_Negitive
+\par \b0\fs16 
+\par Sprite: sprite_mesh_slope_backwards_negitive
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Pinball
+\par \b0\fs16 
+\par Sprite: sprite_pinball
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: object_Danger
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par if (object_Sonic.act == 1) \{
+\par     if (x < 3840) \{
+\par         path_start(path_pinball_act1_1, 6, 0, true);
+\par     \} else \{
+\par         path_start(path_pinball_act1_2, 6, 0, true);
+\par     \}   
+\par \} else \{
+\par     if (x < 6016) \{
+\par         path_start(path_pinball_act2, 6, 0, true);
+\par     \} else \{
+\par         vspeed = 6;
+\par     \}
+\par \}
+\par 
+\par \b  Step Event:
+\par \b0 execute code:
+\par 
+\par if (y > room_height + 46 || place_meeting(x, y, object_Spikes)) \{
+\par     instance_destroy();
+\par \}
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: sprite_Pinball_Spawn
+\par \b0\fs16 
+\par Sprite: sprite_pinball_spawn
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par alarm[0] = 1;
+\par 
+\par \b Alarm Event for alarm 0:
+\par \b0 execute code:
+\par 
+\par instance_create(x + (sprite_width / 2), y + (sprite_height / 2), object_Pinball);
+\par alarm[0] = 120;
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Pinball_Side_To_Side_Block
+\par \b0\fs16 
+\par Sprite: sprite_pinball_crushing_block
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: object_Crushing_Block
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par edge[0] = instance_create(x, y, object_Platform);
+\par edge[1] = instance_create(x + 32, y, object_Platform);
+\par edge[2] = instance_create(x + 64, y, object_Platform);
+\par edge[3] = instance_create(x + 96, y, object_Platform);
+\par edge[4] = instance_create(x, y, object_Wall);
+\par edge[5] = instance_create(x, y + 32, object_Wall);
+\par edge[6] = instance_create(x, y + 64, object_Wall);
+\par edge[7] = instance_create(x, y + 96, object_Wall);
+\par edge[8] = instance_create(x + sprite_width, y, object_Wall);
+\par edge[9] = instance_create(x + sprite_width, y + 32, object_Wall);
+\par edge[10] = instance_create(x + sprite_width, y + 64, object_Wall);
+\par edge[11] = instance_create(x + sprite_width, y + 96, object_Wall);
+\par 
+\par \b  Step Event:
+\par \b0 execute code:
+\par 
+\par if (x <= xstart) \{
+\par     dir = 1;
+\par \} else if (x >= 3968) \{
+\par     dir = -1;
+\par \}
+\par 
+\par if (dir == 1) \{
+\par     if (hspeed < 4) \{hspeed += 1;\}
+\par \} else if (dir == -1) \{
+\par     if (hspeed > -4) \{hspeed -= 1;\}
+\par \}
+\par 
+\par var i;
+\par for (i = 0; i < 12; i += 1) \{
+\par     edge[i].hspeed = hspeed;
+\par \}
+\par 
+\par \b End Step Event:
+\par \b0 execute code:
+\par 
+\par var x_move y_move;
+\par x_move = x - last_x;
+\par y_move = y - last_y;
+\par 
+\par last_x = x;
+\par last_y = y;
+\par 
+\par for (i = 0; i < sprite_height / 32; i += 1) \{
+\par     with (edge[i + 4]) \{
+\par         if (place_meeting(x, y, object_Sonic)) \{
+\par             object_Sonic.x += x_move;
+\par             exit;
+\par         \}
+\par     \}
+\par     with (edge[i + 8]) \{
+\par         if (place_meeting(x, y, object_Sonic)) \{
+\par             with (object_Sonic) \{
+\par                 if (place_meeting(x, y, object_Block_Crush_Detect)) \{script_die();\}
+\par             \}
+\par             object_Sonic.x += x_move;
+\par             exit;
+\par         \}
+\par     \}
+\par \}
+\par 
+\par for (i = 0; i < sprite_width / 32; i += 1) \{
+\par     with (edge[i]) \{
+\par         if (place_meeting(x, y - 8, object_Sonic)) \{
+\par             with (object_Sonic) \{
+\par                 if (!place_meeting(x, y, object_Wall)) \{
+\par                     x += x_move;
+\par                     y += y_move;
+\par                 \}
+\par             \}
+\par             exit;
+\par         \}
+\par     \}
+\par \}
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Block_Crush_Detect_Pinball
+\par \b0\fs16 
+\par Sprite: sprite_pinball_background
+\par Solid: false
+\par Visible: true
+\par Depth: 20
+\par Persistent: false
+\par Parent: object_Block_Crush_Detect
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Up_And_Down_Block
+\par \b0\fs16 
+\par Sprite: sprite_pinball_crushing_block
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par if (height == 0) \{
+\par     height = 128;
+\par     if (speed_ == 0) \{speed_ = 2;\}
+\par \} else \{
+\par     speed_ = 4;
+\par \}
+\par 
+\par //if (x == 4736) \{y -= 128;\}
+\par 
+\par edge[0] = instance_create(x, y, object_Platform);
+\par edge[1] = instance_create(x + 32, y, object_Platform);
+\par edge[2] = instance_create(x + 64, y, object_Platform);
+\par edge[3] = instance_create(x + 96, y, object_Platform);
+\par edge[4] = instance_create(x, y, object_Wall);
+\par edge[5] = instance_create(x, y + 32, object_Wall);
+\par edge[6] = instance_create(x, y + (sprite_height - 64), object_Wall);
+\par edge[7] = instance_create(x, y + (sprite_height - 32), object_Wall);
+\par edge[8] = instance_create(x + sprite_width, y, object_Wall);
+\par edge[9] = instance_create(x + sprite_width, y + 32, object_Wall);
+\par edge[10] = instance_create(x + sprite_width, y + (sprite_height - 64), object_Wall);
+\par edge[11] = instance_create(x + sprite_width, y + (sprite_height - 32), object_Wall);
+\par edge[12] = instance_create(x, y + sprite_height, object_Top);
+\par edge[13] = instance_create(x + 32, y + sprite_height, object_Top);
+\par edge[14] = instance_create(x + 64, y + sprite_height, object_Top);
+\par edge[15] = instance_create(x + 96, y + sprite_height, object_Top);
+\par 
+\par \b  Step Event:
+\par \b0 execute code:
+\par 
+\par var on_platform;
+\par with (object_Sonic) \{
+\par     if (place_meeting(x, y + 8, object_Platform) && !place_meeting(x, y, object_Top)) \{
+\par         on_platform = true;
+\par     \}
+\par \}
+\par 
+\par if (on_platform) \{script_stay_on_platform();\}
+\par 
+\par if (x == 4736 || x == 5632) \{
+\par     if (y <= ystart) \{
+\par         dir = 1;
+\par     \} else if (y >= ystart + height) \{
+\par         dir = -1;
+\par     \}
+\par \} else \{
+\par     if (y >= ystart) \{
+\par         dir = -1;
+\par     \} else if (y <= ystart - height) \{
+\par         dir = 1;
+\par     \}
+\par \}
+\par 
+\par if (dir == 1) \{
+\par     if (vspeed < speed_) \{vspeed += 1;\}
+\par \} else if (dir == -1) \{
+\par     if (vspeed > -speed_) \{vspeed -= 1;\}
+\par \}
+\par 
+\par var i;
+\par for (i = 0; i < 16; i += 1) \{
+\par     edge[i].vspeed = vspeed;
+\par \}
+\par 
+\par for (i = 12; i < 16; i += 1) \{
+\par     with(edge[i]) \{
+\par         if (place_meeting(x, y, object_Sonic)) \{
+\par             with (object_Sonic) \{
+\par                 if (place_meeting(x, y + 1, object_Platform)) \{
+\par                     script_die();
+\par                     exit;
+\par                 \}
+\par             \}
+\par         \}
+\par     \}
+\par \}
+\par 
+\par \b End Step Event:
+\par \b0 execute code:
+\par  ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Half_Height_Block
+\par \b0\fs16 
+\par Sprite: sprite_half_height_block
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: object_Up_And_Down_Block
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: sprite_Pinball_Spawn_Right
+\par \b0\fs16 
+\par Sprite: sprite_pinball_spawn_right
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: sprite_Pinball_Spawn
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Tunnle_Pinball_Act2_T1
+\par \b0\fs16 
+\par Sprite: sprite_tunnle_pinball_act_2_t1
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: object_Tunnle
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Tunnle_Pinball_Act2_T2
+\par \b0\fs16 
+\par Sprite: sprite_tunnle_pinball_act_2_t2
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: object_Tunnle
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Tunnle_Pinball_Act2_T3
+\par \b0\fs16 
+\par Sprite: sprite_tunnle_pinball_act_2_t3
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: object_Tunnle
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Gate_Horizontal
+\par \b0\fs16 
+\par Sprite: sprite_gate_horizontal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: object_Platform
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Gate_Open_Horizontal
+\par \b0\fs16 
+\par Sprite: <no sprite>
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Pinball_Platform
+\par \b0\fs16 
+\par Sprite: sprite_half_height_block
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Tunnle_Pinball_Act2_T4
+\par \b0\fs16 
+\par Sprite: sprite_tunnle_pinball_act_2_t4
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: object_Tunnle
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_UI
+\par \b0\fs16 
+\par Sprite: <no sprite>
+\par Solid: false
+\par Visible: true
+\par Depth: -60
+\par Persistent: true
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_draw_ui with arguments (0,0,0,0,0)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Spiral
+\par \b0\fs16 
+\par Sprite: sprite_spiral
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par instance_create(x + 124, y + 256, object_Spiral_Start);
+\par instance_create(x + 304, y + 256, object_Spiral_End);
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Spiral_Start
+\par \b0\fs16 
+\par Sprite: sprite_spiral_detect
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_Spiral_End
+\par \b0\fs16 
+\par Sprite: sprite_spiral_detect
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par ______________________________________________________
+\par 
+\par 
+\par }
+ 

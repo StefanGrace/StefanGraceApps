@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -64,11 +67,11 @@
     <Compile Include="EnterDateForm.Designer.cs">
       <DependentUpon>EnterDateForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="ClockForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="ClockForm.Designer.cs">
+      <DependentUpon>ClockForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Formatter.cs" />
     <Compile Include="InvalidDateTimeFormatException.cs" />
@@ -90,8 +93,8 @@
     <EmbeddedResource Include="EnterDateForm.resx">
       <DependentUpon>EnterDateForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="ClockForm.resx">
+      <DependentUpon>ClockForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PresetNameForm.resx">
       <DependentUpon>PresetNameForm.cs</DependentUpon>
@@ -117,6 +120,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

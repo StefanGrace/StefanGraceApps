@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lux Calculator</title>
+		<meta name="author" content="Stefan Grace">
+        <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<h1>Lux Calculator</h1>
+        
+		<table align="center">
+			<tr>
+				<td class="label">Aperture:</td>
+				<td class="user-input">f/ <input type="number" id="aperture"></input></td>
+			</tr>
+			<tr>
+				<td class="label">Shutter speed: </td>
+				<td class="user-input">
+                    <select name="shutter-unit" id="shutter-unit">
+                        <option value="fraction">1/</option>
+                        <option value="seconds">Seconds</option>
+                    </select>
+                    <input type="number" id="shutter-speed"></input>
+                </td>
+			</tr>
+			<tr>
+				<td class="label">ISO: </td>
+				<td class="user-input"><input type="number" id="iso"></input></td>
+			</tr>
+		</table>
+        <button id="calculate">Calculate</button>
+		<div id="lux">Lux: </div>
+		<script src="script.js"></script>
+	</body>
+</html>

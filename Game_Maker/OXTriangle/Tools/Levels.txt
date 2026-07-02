@@ -1,0 +1,71 @@
+Level 0 - O X Triangle (introduction)
+Level 1 - A
+Level 2 - Neutral O Triangle
+Level 3 - Neutral characters
+Level 4 - Boulder
+Level 5 - Red Anger
+Level 6 - Square
+Level 7 - Diamond
+Level 8 - Alumax
+Level 9 - K
+Level 10 - Bomb
+Level 11 - B
+Level 12 - Orange Anger
+Level 13 - E
+Level 14 - Barrier
+Level 15 - S
+Level 16 - Connect 4
+Level 17 - Double Boxing
+Level 18 - H
+Level 19 - Arrow
+Level 20 - R
+Level 21 - M
+Level 22 - Blue Anger
+Level 23 - F
+Level 24 - Memory
+Level 25 - G
+Level 26 - Diamond Bomb
+Level 27 - C
+Level 28 - Concrete
+Level 29 - Y
+Level 30 - Nuclear Bomb
+Level 31 - Z
+Level 32 - Connect 4 II
+Level 33 - Teleport
+Level 34 - W
+Level 35 - Purple Anger
+Level 36 - J
+Level 37 - Concreate Bomb
+Level 38 - V
+Level 39 - P
+Level 40 - Nothing new
+Level 41 - Nuclear War Head
+Level 42 - T
+Level 43 - D
+Level 44 - Time Bomb
+Level 45 - Q
+Level 46 - N
+Level 47 - Mud
+Level 48 - TBA
+Level 49 - Gigga G
+Level 50 - ?
+Level 51 - Switch/Gate
+Level 52 - U
+Level 53 - Nothing new
+Level 54 - L
+Level 55 - $
+Level 56 - @
+Level 57 - Nothing new
+Level 58 - TBA
+Level 59 - Pi
+Level 60 - Gigga Port
+Level 61 - Nothing new
+Level 62 - I
+Level 63 - Big W
+Level 64 - Terra G
+Level 65 - Nothing new
+Level 66 - Purple Question Mark 
+Level 67 - Nothing new
+Level 68 - Connect 4 III
+Level 69 - Nothing new
+Level 70 - Final Level

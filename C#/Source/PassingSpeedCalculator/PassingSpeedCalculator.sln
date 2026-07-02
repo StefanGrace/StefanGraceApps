@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassingSpeedCalculator", "PassingSpeedCalculator\PassingSpeedCalculator.csproj", "{A3B43367-56C4-4A64-8763-0C853BFD25AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3B43367-56C4-4A64-8763-0C853BFD25AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3B43367-56C4-4A64-8763-0C853BFD25AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3B43367-56C4-4A64-8763-0C853BFD25AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3B43367-56C4-4A64-8763-0C853BFD25AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50BE2385-6160-40E8-8911-3141B6EA61A8}
+	EndGlobalSection
+EndGlobal

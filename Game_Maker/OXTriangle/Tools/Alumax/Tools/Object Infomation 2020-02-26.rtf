@@ -1,0 +1,1826 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang5129{\fonttbl{\f0\fnil MS Sans Serif;}}
+\viewkind4\uc1\pard\b\f0\fs24 Information about object: object_index
+\par \b0\fs16 
+\par Sprite: <no sprite>
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute script script_start with arguments (0,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_index_draw with arguments (0,0,0,0,0)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_page
+\par \b0\fs16 
+\par Sprite: <no sprite>
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute script script_page with arguments (0,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_page_draw with arguments (0,0,0,0,0)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_exit
+\par \b0\fs16 
+\par Sprite: sprite_button_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = global.text_exit
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 end the game
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (0,0,0,0,0)
+\par 
+\par \b Key Press Event for E-key Key:
+\par \b0 execute code:
+\par 
+\par if (instance_number(object_button_o) == 0 or keyboard_check(vk_shift)) game_end()
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_characters
+\par \b0\fs16 
+\par Sprite: sprite_button_index_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = global.text_characters
+\par 
+\par \b Alarm Event for alarm 0:
+\par \b0 execute script script_characters with arguments (0,0,0,0,0)
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute code:
+\par 
+\par alarm[0] = 1
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (1,0,0,0,0)
+\par 
+\par \b Key Press Event for C-key Key:
+\par \b0 execute code:
+\par 
+\par alarm[0] = 1
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_objects
+\par \b0\fs16 
+\par Sprite: sprite_button_index_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = global.text_objects
+\par 
+\par \b Alarm Event for alarm 0:
+\par \b0 execute script script_objects with arguments (0,0,0,0,0)
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute code:
+\par 
+\par alarm[0] = 1
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (1,0,0,0,0)
+\par 
+\par \b Key Press Event for O-key Key:
+\par \b0 execute script script_objects with arguments (0,0,0,0,0)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_index
+\par \b0\fs16 
+\par Sprite: sprite_button_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = global.text_index
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_index with arguments (0,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (0,0,0,0,0)
+\par 
+\par \b Key Press Event for I-key Key:
+\par \b0 execute code:
+\par 
+\par if (instance_number(object_button_o) == 0 or keyboard_check(vk_shift)) script_index()
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_o
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = "O"
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (0,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,0,0,0,0)
+\par 
+\par \b Key Press Event for 0-key Key:
+\par \b0 execute script script_go_to_page with arguments (0,0,0,0,0)
+\par 
+\par \b Key Press Event for O-key Key:
+\par \b0 execute code:
+\par 
+\par if (!keyboard_check(vk_shift)) script_go_to_page(0)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_x
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = "X"
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (1,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,0,0,0,0)
+\par 
+\par \b Key Press Event for 1-key Key:
+\par \b0 execute script script_go_to_page with arguments (1,0,0,0,0)
+\par 
+\par \b Key Press Event for X-key Key:
+\par \b0 execute code:
+\par 
+\par if (!keyboard_check(vk_shift)) script_go_to_page(1)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_triangle
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = " "
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (2,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute code:
+\par 
+\par script_execute(script_button_text,2)
+\par if(position_meeting(mouse_x,mouse_y,self)) draw_sprite(sprite_triangle_blue,0,x,y) else draw_sprite(sprite_triangle,0,x,y)
+\par 
+\par \b Key Press Event for 2-key Key:
+\par \b0 execute script script_go_to_page with arguments (2,0,0,0,0)
+\par 
+\par \b Key Press Event for T-key Key:
+\par \b0 execute code:
+\par 
+\par if (keyboard_check(vk_shift)) script_go_to_page(2)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_a
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = "A"
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (3,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,0,0,0,0)
+\par 
+\par \b Key Press Event for 3-key Key:
+\par \b0 execute script script_go_to_page with arguments (3,0,0,0,0)
+\par 
+\par \b Key Press Event for A-key Key:
+\par \b0 execute code:
+\par 
+\par if (!keyboard_check(vk_shift)) script_go_to_page(3)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_square
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = " "
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (4,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute code:
+\par 
+\par script_execute(script_button_text,2)
+\par if(position_meeting(mouse_x,mouse_y,self)) draw_sprite(sprite_square_blue,0,x,y) else draw_sprite(sprite_square,0,x,y)
+\par 
+\par \b Key Press Event for 4-key Key:
+\par \b0 execute script script_go_to_page with arguments (4,0,0,0,0)
+\par 
+\par \b Key Press Event for S-key Key:
+\par \b0 execute code:
+\par 
+\par if (keyboard_check(vk_shift)) script_go_to_page(4)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_k
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = "K"
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (5,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,0,0,0,0)
+\par 
+\par \b Key Press Event for 5-key Key:
+\par \b0 execute script script_go_to_page with arguments (5,0,0,0,0)
+\par 
+\par \b Key Press Event for K-key Key:
+\par \b0 execute code:
+\par 
+\par if (!keyboard_check(vk_shift)) script_go_to_page(5)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_b
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = "B"
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (6,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,0,0,0,0)
+\par 
+\par \b Key Press Event for 6-key Key:
+\par \b0 execute script script_go_to_page with arguments (6,0,0,0,0)
+\par 
+\par \b Key Press Event for B-key Key:
+\par \b0 execute code:
+\par 
+\par if (!keyboard_check(vk_shift)) script_go_to_page(6)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_e
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = "E"
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (7,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,0,0,0,0)
+\par 
+\par \b Key Press Event for 7-key Key:
+\par \b0 execute script script_go_to_page with arguments (7,0,0,0,0)
+\par 
+\par \b Key Press Event for E-key Key:
+\par \b0 execute code:
+\par 
+\par if (!keyboard_check(vk_shift)) script_go_to_page(7)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_s
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = "S"
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (8,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,0,0,0,0)
+\par 
+\par \b Key Press Event for 8-key Key:
+\par \b0 execute script script_go_to_page with arguments (8,0,0,0,0)
+\par 
+\par \b Key Press Event for S-key Key:
+\par \b0 execute code:
+\par 
+\par if (!keyboard_check(vk_shift)) script_go_to_page(8)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_h
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = "H"
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (9,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,0,0,0,0)
+\par 
+\par \b Key Press Event for 9-key Key:
+\par \b0 execute script script_go_to_page with arguments (9,0,0,0,0)
+\par 
+\par \b Key Press Event for H-key Key:
+\par \b0 execute code:
+\par 
+\par if (!keyboard_check(vk_shift)) script_go_to_page(9)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_r
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = "R"
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (10,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,0,0,0,0)
+\par 
+\par \b Key Press Event for R-key Key:
+\par \b0 execute code:
+\par 
+\par if (!keyboard_check(vk_shift)) script_go_to_page(10)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_m
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = "M"
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (11,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,0,0,0,0)
+\par 
+\par \b Key Press Event for M-key Key:
+\par \b0 execute code:
+\par 
+\par if (!keyboard_check(vk_shift)) script_go_to_page(11)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_f
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = "F"
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (12,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,0,0,0,0)
+\par 
+\par \b Key Press Event for F-key Key:
+\par \b0 execute code:
+\par 
+\par if (!keyboard_check(vk_shift)) script_go_to_page(12)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_g
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name= "G"
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (13,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,0,0,0,0)
+\par 
+\par \b Key Press Event for G-key Key:
+\par \b0 execute code:
+\par 
+\par if (!keyboard_check(vk_shift)) script_go_to_page(13)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_c
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = "C"
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (14,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,0,0,0,0)
+\par 
+\par \b Key Press Event for C-key Key:
+\par \b0 execute code:
+\par 
+\par if (!keyboard_check(vk_shift)) script_go_to_page(14)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_y
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = "Y"
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (15,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,0,0,0,0)
+\par 
+\par \b Key Press Event for Y-key Key:
+\par \b0 execute code:
+\par 
+\par if (!keyboard_check(vk_shift)) script_go_to_page(15)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_z
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = "Z"
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (16,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,0,0,0,0)
+\par 
+\par \b Key Press Event for Z-key Key:
+\par \b0 execute code:
+\par 
+\par if (!keyboard_check(vk_shift)) script_go_to_page(16)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_w
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = "W"
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (17,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,0,0,0,0)
+\par 
+\par \b Key Press Event for W-key Key:
+\par \b0 execute code:
+\par 
+\par if (!keyboard_check(vk_shift)) script_go_to_page(17)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_j
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = "J"
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (18,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,0,0,0,0)
+\par 
+\par \b Key Press Event for J-key Key:
+\par \b0 execute code:
+\par 
+\par if (!keyboard_check(vk_shift)) script_go_to_page(18)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_v
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = "V"
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (19,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,0,0,0,0)
+\par 
+\par \b Key Press Event for V-key Key:
+\par \b0 execute code:
+\par 
+\par if (!keyboard_check(vk_shift)) script_go_to_page(19)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_p
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = "P"
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (20,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,0,0,0,0)
+\par 
+\par \b Key Press Event for P-key Key:
+\par \b0 execute code:
+\par 
+\par if (!keyboard_check(vk_shift)) script_go_to_page(20)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_t
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = "T"
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (21,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,0,0,0,0)
+\par 
+\par \b Key Press Event for T-key Key:
+\par \b0 execute code:
+\par 
+\par if (!keyboard_check(vk_shift)) script_go_to_page(21)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_d
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = "D"
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (22,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,0,0,0,0)
+\par 
+\par \b Key Press Event for D-key Key:
+\par \b0 execute code:
+\par 
+\par if (!keyboard_check(vk_shift)) script_go_to_page(22)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_q
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = "Q"
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (23,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,0,0,0,0)
+\par 
+\par \b Key Press Event for Q-key Key:
+\par \b0 execute code:
+\par 
+\par if (!keyboard_check(vk_shift)) script_go_to_page(23)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_n
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = "N"
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (24,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,0,0,0,0)
+\par 
+\par \b Key Press Event for N-key Key:
+\par \b0 execute code:
+\par 
+\par if (!keyboard_check(vk_shift)) script_go_to_page(24)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_gigga_g
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = " "
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (25,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute code:
+\par 
+\par script_execute(script_button_text,2)
+\par draw_set_font(font_small)
+\par draw_set_valign(fa_center)
+\par draw_set_halign(fa_center)
+\par if(position_meeting(mouse_x,mouse_y,self)) draw_text_color(x,y,"Gigga#G",c_blue,c_blue,c_blue,c_blue,100) else draw_text_color(x,y,"Gigga#G",c_black,c_black,c_black,c_black,100)
+\par draw_set_valign(0)
+\par draw_set_halign(0)
+\par 
+\par \b Key Press Event for G-key Key:
+\par \b0 execute code:
+\par 
+\par if (keyboard_check(vk_shift)) script_go_to_page(25)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_question_mark
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = "?"
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (26,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,0,0,0,0)
+\par 
+\par \b Key Press Event for Q-key Key:
+\par \b0 execute code:
+\par 
+\par if (keyboard_check(vk_shift)) script_go_to_page(26)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_u
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = "U"
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (27,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,0,0,0,0)
+\par 
+\par \b Key Press Event for U-key Key:
+\par \b0 execute code:
+\par 
+\par if (!keyboard_check(vk_shift)) script_go_to_page(27)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_l
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = "L"
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (28,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,0,0,0,0)
+\par 
+\par \b Key Press Event for L-key Key:
+\par \b0 execute code:
+\par 
+\par if (!keyboard_check(vk_shift)) script_go_to_page(28)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_dollar_sign
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = "$"
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (29,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,0,0,0,0)
+\par 
+\par \b Key Press Event for D-key Key:
+\par \b0 execute code:
+\par 
+\par if (!keyboard_check(vk_shift)) script_go_to_page(29)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_at_sign
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = "@"
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (30,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,0,0,0,0)
+\par 
+\par \b Key Press Event for A-key Key:
+\par \b0 execute code:
+\par 
+\par if (keyboard_check(vk_shift)) script_go_to_page(30)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_pi
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = " "
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (31,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute code:
+\par 
+\par script_execute(script_button_text,2)
+\par if(position_meeting(mouse_x,mouse_y,self)) draw_sprite(sprite_pi_blue,0,x,y) else draw_sprite(sprite_pi,0,x,y)
+\par 
+\par \b Key Press Event for P-key Key:
+\par \b0 execute code:
+\par 
+\par if (keyboard_check(vk_shift)) script_go_to_page(31)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_i
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = "I"
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (32,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,0,0,0,0)
+\par 
+\par \b Key Press Event for I-key Key:
+\par \b0 execute code:
+\par 
+\par if (!keyboard_check(vk_shift)) script_go_to_page(32)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_big_w
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = " "
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (33,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute code:
+\par 
+\par script_execute(script_button_text,2)
+\par draw_set_font(font_small)
+\par draw_set_valign(fa_center)
+\par draw_set_halign(fa_center)
+\par if(position_meeting(mouse_x,mouse_y,self)) draw_text_color(x,y,global.text_big+"#W",c_blue,c_blue,c_blue,c_blue,100) else draw_text_color(x,y,global.text_big+"#W",c_black,c_black,c_black,c_black,100)
+\par draw_set_valign(0)
+\par draw_set_halign(0)
+\par 
+\par \b Key Press Event for W-key Key:
+\par \b0 execute code:
+\par 
+\par if (keyboard_check(vk_shift)) script_go_to_page(33)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_terra_g
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = " "
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (34,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute code:
+\par 
+\par script_execute(script_button_text,2)
+\par draw_set_font(font_small)
+\par draw_set_valign(fa_center)
+\par draw_set_halign(fa_center)
+\par if(position_meeting(mouse_x,mouse_y,self)) draw_text_color(x,y,"Terra#G",c_blue,c_blue,c_blue,c_blue,100) else draw_text_color(x,y,"Terra#G",c_black,c_black,c_black,c_black,100)
+\par draw_set_valign(0)
+\par draw_set_halign(0)
+\par 
+\par \b Key Press Event for G-key Key:
+\par \b0 execute code:
+\par 
+\par if (!keyboard_check(vk_shift)) script_go_to_page(34)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_purple_question_mark
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = " "
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (35,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute code:
+\par 
+\par script_execute(script_button_text,2)
+\par draw_set_font(font_small)
+\par draw_set_valign(fa_center)
+\par draw_set_halign(fa_center)
+\par if(position_meeting(mouse_x,mouse_y,self)) draw_text_color(x,y,global.text_purple+"#?",c_blue,c_blue,c_blue,c_blue,100) else draw_text_color(x,y,global.text_purple+"#?",c_black,c_black,c_black,c_black,100)
+\par draw_set_valign(0)
+\par draw_set_halign(0)
+\par 
+\par \b Key Press Event for Q-key Key:
+\par \b0 execute code:
+\par 
+\par if (!keyboard_check(vk_shift)) script_go_to_page(35)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_next_page
+\par \b0\fs16 
+\par Sprite: sprite_button_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = global.text_next_page
+\par 
+\par \b Alarm Event for alarm 0:
+\par \b0 execute script script_next_page with arguments (0,0,0,0,0)
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute code:
+\par 
+\par alarm[0] = 1
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (0,0,0,0,0)
+\par 
+\par \b Key Press Event for <Page Down> Key:
+\par \b0 execute script script_next_page with arguments (0,0,0,0,0)
+\par 
+\par \b Key Press Event for N-key Key:
+\par \b0 execute script script_next_page with arguments (0,0,0,0,0)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_previous_page
+\par \b0\fs16 
+\par Sprite: sprite_button_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = global.text_previous_page
+\par 
+\par \b Alarm Event for alarm 0:
+\par \b0 execute script script_previous_page with arguments (0,0,0,0,0)
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute code:
+\par 
+\par alarm[0] = 1
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (0,0,0,0,0)
+\par 
+\par \b Key Press Event for <Page Up> Key:
+\par \b0 execute script script_previous_page with arguments (0,0,0,0,0)
+\par 
+\par \b Key Press Event for P-key Key:
+\par \b0 execute script script_previous_page with arguments (0,0,0,0,0)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_boulder
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = global.text_boulder
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (100,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,1,0,0,0)
+\par 
+\par \b Key Press Event for 0-key Key:
+\par \b0 if expression keyboard_check(vk_shift) is not true
+\par       execute script script_go_to_page with arguments (100,0,0,0,0)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_red_anger
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = global.text_red_anger
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (101,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,1,0,0,0)
+\par 
+\par \b Key Press Event for 1-key Key:
+\par \b0 if expression keyboard_check(vk_shift) is not true
+\par       execute script script_go_to_page with arguments (101,0,0,0,0)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_bomb
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = global.text_bomb
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (102,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,1,0,0,0)
+\par 
+\par \b Key Press Event for 2-key Key:
+\par \b0 if expression keyboard_check(vk_shift) is not true
+\par       execute script script_go_to_page with arguments (102,0,0,0,0)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_orange_anger
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = global.text_orange_anger
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (103,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,1,0,0,0)
+\par 
+\par \b Key Press Event for 3-key Key:
+\par \b0 if expression keyboard_check(vk_shift) is not true
+\par       execute script script_go_to_page with arguments (103,0,0,0,0)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_barrier
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = global.text_barrier
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (104,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,1,0,0,0)
+\par 
+\par \b Key Press Event for 4-key Key:
+\par \b0 if expression keyboard_check(vk_shift) is not true
+\par       execute script script_go_to_page with arguments (104,0,0,0,0)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_double_boxing
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = global.text_double_boxing
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (105,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,1,0,0,0)
+\par 
+\par \b Key Press Event for 5-key Key:
+\par \b0 if expression keyboard_check(vk_shift) is not true
+\par       execute script script_go_to_page with arguments (105,0,0,0,0)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_arrow
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = global.text_arrow
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (106,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,1,0,0,0)
+\par 
+\par \b Key Press Event for 6-key Key:
+\par \b0 if expression keyboard_check(vk_shift) is not true
+\par       execute script script_go_to_page with arguments (106,0,0,0,0)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_blue_anger
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = global.text_blue_anger
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (107,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,1,0,0,0)
+\par 
+\par \b Key Press Event for 7-key Key:
+\par \b0 if expression keyboard_check(vk_shift) is not true
+\par       execute script script_go_to_page with arguments (107,0,0,0,0)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_diamond_bomb
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = global.text_diamond_bomb
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (108,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,1,0,0,0)
+\par 
+\par \b Key Press Event for 8-key Key:
+\par \b0 if expression keyboard_check(vk_shift) is not true
+\par       execute script script_go_to_page with arguments (108,0,0,0,0)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_concrete
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = global.text_concrete
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (109,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,1,0,0,0)
+\par 
+\par \b Key Press Event for 9-key Key:
+\par \b0 if expression keyboard_check(vk_shift) is not true
+\par       execute script script_go_to_page with arguments (109,0,0,0,0)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_nuclear_bomb
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = global.text_nuclear_bomb
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (110,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,1,0,0,0)
+\par 
+\par \b Key Press Event for 0-key Key:
+\par \b0 execute code:
+\par 
+\par if (keyboard_check(vk_shift)) script_go_to_page(110)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_teleport
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = global.text_teleport
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (111,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,1,0,0,0)
+\par 
+\par \b Key Press Event for 1-key Key:
+\par \b0 execute code:
+\par 
+\par if (keyboard_check(vk_shift)) script_go_to_page(111)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_purple_anger
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = global.text_purple_anger
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (112,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,1,0,0,0)
+\par 
+\par \b Key Press Event for 2-key Key:
+\par \b0 execute code:
+\par 
+\par if (keyboard_check(vk_shift)) script_go_to_page(112)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_concreate_bomb
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = global.text_concreate_bomb
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (113,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,1,0,0,0)
+\par 
+\par \b Key Press Event for 3-key Key:
+\par \b0 execute code:
+\par 
+\par if (keyboard_check(vk_shift)) script_go_to_page(113)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_nwh
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = global.text_nwh
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (114,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,1,0,0,0)
+\par 
+\par \b Key Press Event for 4-key Key:
+\par \b0 execute code:
+\par 
+\par if (keyboard_check(vk_shift)) script_go_to_page(114)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_time_bomb
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = global.text_time_bomb
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (115,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,1,0,0,0)
+\par 
+\par \b Key Press Event for 5-key Key:
+\par \b0 execute code:
+\par 
+\par if (keyboard_check(vk_shift)) script_go_to_page(115)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_mud
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = global.text_mud
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (116,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,1,0,0,0)
+\par 
+\par \b Key Press Event for 6-key Key:
+\par \b0 execute code:
+\par 
+\par if (keyboard_check(vk_shift)) script_go_to_page(116)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_switch_gate
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = global.text_switch_gate
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (117,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,1,0,0,0)
+\par 
+\par \b Key Press Event for 7-key Key:
+\par \b0 execute code:
+\par 
+\par if (keyboard_check(vk_shift)) script_go_to_page(117)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_gigga_port
+\par \b0\fs16 
+\par Sprite: sprite_button_item_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = "Gigga Port"
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_go_to_page with arguments (118,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (2,1,0,0,0)
+\par 
+\par \b Key Press Event for 8-key Key:
+\par \b0 execute code:
+\par 
+\par if (keyboard_check(vk_shift)) script_go_to_page(118)
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_dark
+\par \b0\fs16 
+\par Sprite: sprite_button_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = global.text_dark
+\par 
+\par \b Alarm Event for alarm 0:
+\par \b0 change the instance into object object_button_light, yes performing events
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_dark with arguments (0,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (0,0,0,0,0)
+\par 
+\par \b Key Press Event for D-key Key:
+\par \b0 execute code:
+\par 
+\par if (instance_number(object_button_o) == 0 or keyboard_check(vk_shift)) script_dark()
+\par ______________________________________________________
+\par 
+\par \b\fs24 Information about object: object_button_light
+\par \b0\fs16 
+\par Sprite: sprite_button_normal
+\par Solid: false
+\par Visible: true
+\par Depth: 0
+\par Persistent: false
+\par Parent: <no parent>
+\par Mask: <same as sprite>
+\par 
+\par \b Create Event:
+\par \b0 execute code:
+\par 
+\par button_name = global.text_light
+\par 
+\par \b Alarm Event for alarm 0:
+\par \b0 change the instance into object object_button_dark, yes performing events
+\par 
+\par \b Mouse Event for Left Released:
+\par \b0 execute script script_light with arguments (0,0,0,0,0)
+\par 
+\par \b Draw Event:
+\par \b0 execute script script_button_text with arguments (0,0,0,0,0)
+\par 
+\par \b Key Press Event for L-key Key:
+\par \b0 execute code:
+\par 
+\par if (instance_number(object_button_o) == 0 or keyboard_check(vk_shift)) script_light()
+\par ______________________________________________________
+\par 
+\par 
+\par }
+ 

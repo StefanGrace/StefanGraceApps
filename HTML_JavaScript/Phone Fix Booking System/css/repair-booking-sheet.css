@@ -1,0 +1,18 @@
+.key {
+	font-weight: bold;
+}
+
+#courtesy-phone-table {
+	text-decoration: 1px;
+	border-collapse: collapse;
+}
+
+#courtesy-phone-table , #courtesy-phone-table  th, #courtesy-phone-table  td {
+  border: 1px solid black;
+}
+
+.invoice-layout {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 50% 50%;
+}

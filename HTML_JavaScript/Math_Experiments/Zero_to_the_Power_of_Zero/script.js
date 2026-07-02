@@ -1,0 +1,1 @@
+console.log(Math.pow(0, 0));

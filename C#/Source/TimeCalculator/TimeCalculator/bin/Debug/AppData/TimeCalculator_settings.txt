@@ -1,0 +1,5 @@
+DisplayDuration
+unit + subunits
+True
+ISO8601
+2

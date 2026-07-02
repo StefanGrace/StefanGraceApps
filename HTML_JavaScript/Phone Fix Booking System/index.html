@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<!--head-->
+<head>
+	<meta name="viewport" content="width=device-width" charset="UTF-8">
+	<title>Phone Fix Booking System</title>
+	<link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+</head>
+
+<!--body-->
+<body>
+	<!--header section-->
+	<header>
+		<!--title section-->
+		<h1 class="title-area">Phone Fix Booking System</h1>
+		<!--navbar-->
+		<nav class="menu-area">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="extension.html">Extension</a></li>
+			</ul>
+		</nav>	
+	</header>
+	
+	<!--main section-->
+	<main>
+		<!--every input must be in a form-->
+		<form>
+			<div class="form-layout">
+				<!--section 1 - customer details-->
+				<section class="customer-details">
+					<h1>Customer Details</h1>
+					<br>
+					<fieldset id="cust-type">
+						<legend>Customer Type *</legend>
+						<label for="consumer">Consumer</label>
+						<input type="radio" id="consumer" name="customer-type">
+						<br>
+						<label for="business">Business</label>
+						<input type="radio" id="business" name="customer-type">
+					</fieldset>
+					<br>
+					<div>
+						<label for="title">Title:*</label>
+						<select id="title">
+							<option value="mr">Mr</option>
+							<option value="mrs">Mrs</option>
+							<option value="ms">Ms</option>
+							<option value="miss">Miss</option>
+							<option value="dr">Dr</option>
+						</select>
+					</div>
+					<br>
+					<div>
+						<label for="first-name">First Name:*</label>
+						<input type="text" id="first-name">
+					</div>
+					<br>
+					<div>
+						<label for="last-name">Last Name:*</label>
+						<input type="text" id="last-name">
+					</div>
+					<br>
+					<div>
+						<label for="street">Street:*</label>
+						<input type="text" id="street">
+					</div>
+					<br>
+					<div>
+						<label for="suburb">Suburb:</label>
+						<input type="text" id="suburb">
+					</div>
+					<br>
+					<div>
+						<label for="city">City:*</label>
+						<input type="text" id="city">
+					</div>
+					<br>
+					<div>
+						<label for="post-code">Post Code:*</label>
+						<input type="text" id="post-code">
+					</div>
+					<br>
+					<div>
+						<label for="phone-number">Phone Number:*</label>
+						<input type="text" id="phone-number">
+					</div>
+					<br>
+					<div>
+						<label for="email">Email:*</label>
+						<input type="email" id="email">
+					</div>
+				</section>
+				
+				<!--section 2 - repair details-->
+				<section class="repair-details">
+					<h1>Repair Details</h1>
+					<br>
+					<div>
+						<label for="purchase-date">Purchase Date:*</label>
+						<input type="text" id="purchase-date">
+					</div>
+					<br>
+					<div>
+						<label for="repair-date">Repair Date:*</label>
+						<input type="text" id="repair-date">
+					</div>
+					<br>
+					<div>
+					<fieldset>
+						<legend>Under Warranty</legend>
+						<label for="warranty">Warranty: </label>
+						<input type="checkbox" id="warranty" name="warranty">
+					</fieldset>
+					</div>
+					<br>
+					<div>
+						<label for="name">IMEI Number:*</label>
+						<input type="text" id="imei-number">
+					</div>
+					<br>
+					<div>
+						<label for="make">Make:*</label>
+						<select id="make">
+							<option value="Apple">Apple</option>
+							<option value="LG">LG</option>
+							<option value="Motorola">Motorola</option>
+							<option value="Nokia">Nokia</option>
+							<option value="Samsung">Samsung</option>
+							<option value="Sony">Sony</option>
+							<option value="Other">Other</option>
+						</select>
+					</div>
+					<br>
+					<div>
+						<label for="name">Model Number:</label>
+						<input type="text" id="model-number">
+					</div>
+					<br>
+					<div>
+						<label for="fault-category">Fault Category:*</label>
+						<select id="fault-category">
+							<option value="Battery">Battery</option>
+							<option value="Sharging">Charging</option>
+							<option value="Screen">Screen</option>
+							<option value="SD Storage">SD-storage</option>
+							<option value="Software">Software</option>
+							<option value="Other">Other</option>
+						</select>
+					</div>
+					<br>
+					<div>
+						<label for="description">Description:*</label>
+						<textarea id="description"></textarea>
+					</div>
+				</section>
+				
+				<!--section 3 - courtesy phone-->
+				<section class="courtesy-phone">
+					<h1>Courtesy Phone</h1>
+					<br>
+					<div>
+						<label for="item-type">Item Type:</label>
+						<select id="item-type">
+							<option value="iphone">iPhone</option>
+							<option value="other-phone">Other Phone</option>
+							<option value="charger">Charger</option>
+						</select>
+					</div>
+					<br>
+					<button type="button" id="add-button" class="btn btn-primary">Add</button>
+				</section>
+				
+				<!--section 4 - cost section-->
+				<section class="cost-section">
+					<h1>Cost</h1>
+					<br>
+					<div>
+						<label for="bond">Bond:</label>
+						<input type="text" id="bond" value="$0.00" disabled>
+					</div>
+					<br>
+					<div>
+						<label for="service-fee">Service Fee:</label>
+						<input type="text" id="service-fee" value="$0.00" disabled>
+					</div>
+					<br>
+					<div>
+						<label for="total">Total:</label>
+						<input type="text" id="total" value="$0.00" disabled>
+					</div>
+					<br>
+					<div>
+						<label for="gst">GST:</label>
+						<input type="text" id="gst" value="$0.00" disabled>
+					</div>
+					<br>
+					<div>
+						<label for="total-plus-gst">Total(+GST):</label>
+						<input type="text" id="total-plus-gst" value="$0.00" disabled>
+					</div>
+				</section>
+				
+				<!--section 5 - buttons section-->
+				<section class="buttons-section">
+					<button type="submit" class="btn btn-primary">Submit</button>
+					<button type="reset" class="btn btn-primary">Reset</button>
+					<button type="button" id="faq-button" class="btn btn-primary">FAQ?</button>
+				</section>
+			</div>
+		</form>
+	
+		<!--JavaScript-->
+		<script src="js/javascript.js"></script>
+		
+	</main>
+	
+	<!--footer section-->
+	<footer>
+		<p>Stefan Grace, Copyright &copy; 2019</p>
+	</footer>
+	
+</body>
+
+</html>

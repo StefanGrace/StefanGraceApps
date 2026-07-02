@@ -1,0 +1,113 @@
+English:
+
+A kills X, but can be killed by Triangle
+
+Neutral characters can be captured by ether player
+
+Square can tunnel rock and is a survival character 
+
+This is a boulder, it will fall when pushed
+
+This anger will give you the power to kill anything for 5 moves 
+
+Diamond cannot be tunnelled by X or Square
+
+K can tunnel diamond 
+
+This is a bomb. When it falls it blows a tunnel 
+
+B can infiltrate boxes of 4 
+
+When a neutral character is located in diamond, it appears yellow
+
+Orange anger lets you tunnel rock 
+
+E kills O and Square and can tunnel downwards through rock and diamond
+
+Barriers cannot be tunnelled through 
+
+S stuns all characters except E and H 
+
+
+
+French:
+
+A tue X, mais peut etre tue par Triangle
+
+caracteres neutres peuvent etre captures par le joueur ether
+
+Place rock peut tunnel et est un caractere de survie
+
+Ceci est un rocher, il va tomber quand on le pousse
+
+Cette colere vous donnera le pouvoir de tuer quoi que ce soit pour 5 coups
+
+Diamant ne peut pas etre tunnellisation par X ou Carre
+
+K tunnel peut diamant
+
+Ceci est une bombe. Quand il tombe quil souffle un tunnel
+
+B peut infiltrer des boites de 4
+
+Quand un caractere neutre est situe dans le diamant, il apparaît en jaune
+
+la colere d Orange vous permet de tunnel de roche
+
+E tue O et Square et peut creer un tunnel vers le bas a travers la roche et le diamant
+
+
+
+Spanish:
+
+Una mata X, pero puede ser matado por Triangle
+
+caracteres neutrales pueden ser capturados por el jugador de eter
+
+Plaza de la roca del tunel lata y es un caracter de supervivencia
+
+Se trata de una roca, se caera cuando se le presiona
+
+Esta ira le dara poder para matar cualquier cosa por 5 se mueve
+
+Diamond no puede ser tunelizado por X o Plaza
+
+K puede diamante tunel
+
+Se trata de una bomba. Cuando cae sopla un tunel
+
+B puede infiltrarse en cajas de 4
+
+Cuando un caracter neutro se encuentra en el diamante, que aparece de color amarillo
+
+la ira de Orange que deja la roca del tunel
+
+E mata O y de la plaza y el tunel de lata hacia abajo a traves de la roca y el diamante
+
+
+
+German:
+
+Ein totet X, kann aber durch Dreieck getotet werden
+
+Neutrale Charaktere konnen durch Ather Spieler erfasst werden
+
+Platz kann Tunnel Rock und ist ein Uberleben Charakter
+
+Dies ist ein Findling, es fallen wird, wenn er gedruckt
+
+Diese Wut wird Ihnen Kraft, alles fur 5 bewegt sich zu toten
+
+Diamant kann nicht durch X oder Platz getunnelt
+
+K tunneln konnen Diamant
+
+Dies ist eine Bombe. Wenn es fallt, blast sie einen Tunnel
+
+B-Boxen von 4 infiltrieren
+
+Wenn ein neutraler Charakter in Diamant befindet, erscheint es gelb
+
+Orange Wut konnen Sie Tunnel Rock
+
+E totet O und Platz und kann Tunnel nach unten durch Fels und Diamant

@@ -1,0 +1,16 @@
+What happens if you go past the highest and lowest numbers?
+
+Highest signed 8-bit integer: -128
+Highest unsigned 8-bit integer: 0
+Highest signed 16-bit integer: -32768
+Highest unsigned 16-bit integer: 0
+Highest signed 32-bit integer: -2147483648
+Highest unsigned 32-bit integer: 0
+Highest signed 64-bit integer: -9223372036854775808
+Highest unsigned 64-bit integer: 0
+Highest 32-bit float: Infinity
+Highest 64-bit float: Infinity
+Highest decimal: Value was either too large or too small for a Decimal.
+Lowest positive 32-bit float: 0
+Lowest positive 64-bit float: 0
+Lowest positive decimal: 0
